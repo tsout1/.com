@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Get-Key</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000000, #111111);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .key-container {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      width: 350px;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .key-container:hover {
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #000;
+      background: #fff;
+      padding: 10px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #0f0f0f;
+      color: white;
+      font-weight: 600;
+      margin: 5px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background: #333;
+      transform: scale(1.05);
+    }
+
+    .message {
+      margin: 15px 0;
+      font-size: 14px;
+      min-height: 20px;
+    }
+
+    #countdown {
+      font-size: 13px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="key-container" id="keyContainer">
+    <h3>Lấy Key Để Sử Dụng</h3>
+    <input type="text" id="userKey" placeholder="Dán Key Vào Đây">
+    <div>
+      <button onclick="copyKeyLink()">Lấy Key</button>
+      <button onclick="checkKey()">Xác Nhận</button>
+    </div>
+    <p id="message" class="message"></p>
+    <p id="countdown"></p>
+  </div>
+
+  <script>
+    const validKeys = ["khoitongdz", "vip123"];
+    const keyExpireTime = 35 * 24 * 60 * 60 * 1000;
+    const redirectURL = "https://khoitongdz.github.io/UgphoneMod/";
+    const keyLink = "https://ez4short.com/rPxRJ5";
+
+    function copyKeyLink() {
+      navigator.clipboard.writeText(keyLink).then(() => {
+        document.getElementById("message").style.color = "#3dfd2e";
+        document.getElementById("message").textContent = `🔗 Đã copy link lấy key: ${keyLink}`;
+      }).catch(err => {
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").textContent = keyLink;
+      });
+    }
+
+    function checkKey() {
+      const userKey = document.getElementById("userKey").value;
+      const message = document.getElementById("message");
+      message.style.color = "white";
+      message.textContent = "🔄 Đang kiểm tra key...";
+
+      setTimeout(() => {
+        if (validKeys.includes(userKey)) {
+          message.style.color = "#3dfd2e";
+          message.textContent = "✅ Key đúng! Đang chuyển hướng...";
+          localStorage.setItem("storedKey", userKey);
+          localStorage.setItem("keyTimestamp", Date.now().toString());
+          updateCountdown();
+
+          setTimeout(() => {
+            window.location.href = redirectURL;
+          }, 1500);
+        } else {
+          message.style.color = "#ff4d4d";
+          message.textContent = "❌ Key sai!";
+        }
+      }, 1000);
+    }
+
+    function checkStoredKey() {
+      const storedKey = localStorage.getItem("storedKey");
+      const keyTimestamp = localStorage.getItem("keyTimestamp");
+
+      if (storedKey && validKeys.includes(storedKey)) {
+        if (keyTimestamp && Date.now() - parseInt(keyTimestamp) < keyExpireTime) {
+          updateCountdown();
+          setTimeout(() => {
+            window.location.href = redirectURL;
+          }, 1000);
+        } else {
+          localStorage.removeItem("storedKey");
+          localStorage.removeItem("keyTimestamp");
+          alert("⚠️ Key đã hết hạn. Vui lòng lấy key mới!");
+        }
+      }
+    }
+
+    function updateCountdown() {
+      const keyTimestamp = localStorage.getItem("keyTimestamp");
+      const countdown = document.getElementById("countdown");
+      if (keyTimestamp) {
+        const expireAt = parseInt(keyTimestamp) + keyExpireTime;
+        const interval = setInterval(() => {
+          const now = Date.now();
+          const timeLeft = expireAt - now;
+
+          if (timeLeft <= 0) {
+            countdown.textContent = "⛔ Key đã hết hạn.";
+            localStorage.removeItem("storedKey");
+            localStorage.removeItem("keyTimestamp");
+            clearInterval(interval);
+            return;
+          }
+
+          const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+          countdown.textContent = `⌛ Key hết hạn sau: ${days} ngày ${hours} giờ ${minutes} phút ${seconds} giây`;
+        }, 1000);
+      }
+    }
+
+    window.onload = () => {
+      const autoKey = "khoitongdz";
+      document.getElementById("userKey").value = autoKey;
+      checkKey();
+    };
+  </script>
+
+</body>
+</html>
