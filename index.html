@@ -1,193 +1,346 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Get-Key</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>CloudMod</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="https://tse2.mm.bing.net/th?id=OIP.vF_7EF1mCb0TPrZ4a3w1TgHaEP&pid=Api&P=0&h=220" type="image/png">
   <style>
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
     }
-
     body {
-      background: linear-gradient(135deg, #000000, #111111);
-      height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      color: white;
+      justify-content: center;
+      height: 100vh;
+      background-image: url('https://img.thuthuattinhoc.vn/uploads/2019/04/10/hinh-nen-mau-den-3d-cuc-dep-cho-may-tinh_112615298.jpg'); 
+      background-size: cover;
+      background-position: center;
+      overflow-x: hidden;
+      margin: 0;
+      padding-top: 40px;
     }
 
-    .key-container {
-      background: rgba(0, 0, 0, 0.85);
-      padding: 30px 25px;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-      width: 350px;
-      text-align: center;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .key-container:hover {
-      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
-    }
-
-    h3 {
-      font-size: 24px;
-      color: #000;
-      background: #fff;
-      padding: 10px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
-
-    input[type="text"] {
+    .top-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
-      padding: 12px;
-      border-radius: 10px;
-      border: none;
-      outline: none;
-      margin-bottom: 15px;
-      font-size: 16px;
+      background: black;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      z-index: 999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.6);
     }
 
-    button {
+    .nav-button {
+      background: none;
+      color: white;
+      font-size: 20px;
+      border: none;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .nav-button:hover {
+      transform: scale(1.2);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .time-display {
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 8px 16px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s ease-in;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .container-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      scroll-behavior: smooth;
+      max-width: 100%;
+    }
+
+    .container-wrapper::-webkit-scrollbar {
+      height: 8px;
+    }
+    .container-wrapper::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+    }
+    .container-wrapper::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .game-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 15px;
+      min-width: 160px;
+      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.4s ease;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .game-box:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.3);
+    }
+
+    .game-image {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .game-box:hover .game-image {
+      transform: scale(1.1);
+    }
+
+    .play-button {
+      position: relative;
+      background: black;
+      color: white;
       padding: 10px 20px;
       border: none;
       border-radius: 10px;
-      background: #0f0f0f;
-      color: white;
-      font-weight: 600;
-      margin: 5px;
+      font-size: 16px;
       cursor: pointer;
-      transition: all 0.2s ease-in-out;
+      overflow: hidden;
+      z-index: 0;
+      transition: all 0.4s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
 
-    button:hover {
-      background: #333;
+    .play-button::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transform: skewX(-25deg);
+      transition: 0.5s;
+    }
+
+    .play-button:hover {
+      background: #222;
+      transform: translateY(-2px);
+    }
+
+    .play-button:hover::after {
+      left: 100%;
+    }
+
+    .web-credit {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      font-size: 16px;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 12px 24px;
+      border-radius: 14px;
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 2s ease;
+    }
+
+    .web-credit a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .web-credit a:hover {
+      text-decoration: underline;
       transform: scale(1.05);
     }
 
-    .message {
-      margin: 15px 0;
-      font-size: 14px;
-      min-height: 20px;
+    .discord-icon {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s ease;
     }
 
-    #countdown {
-      font-size: 13px;
-      color: #bbb;
+    .web-credit a:hover .discord-icon {
+      transform: scale(1.2);
+    }
+
+    @media screen and (max-width: 600px) {
+      .web-credit {
+        font-size: 14px;
+        padding: 10px 16px;
+        gap: 6px;
+      }
+      .discord-icon {
+        width: 18px;
+        height: 18px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="key-container" id="keyContainer">
-    <h3>Lấy Key Để Sử Dụng</h3>
-    <input type="text" id="userKey" placeholder="Dán Key Vào Đây">
-    <div>
-      <button onclick="copyKeyLink()">Lấy Key</button>
-      <button onclick="checkKey()">Xác Nhận</button>
-    </div>
-    <p id="message" class="message"></p>
-    <p id="countdown"></p>
+  <!-- Thanh điều hướng trên -->
+  <div class="top-navbar">
+    <button class="nav-button" onclick="history.back()">←</button>
+    <button class="nav-button" onclick="history.forward()">→</button>
+    <button class="nav-button" onclick="location.reload()">⟳</button>
   </div>
 
-  <script>
-    const validKeys = ["khoitongdz", "vip123"];
-    const keyExpireTime = 35 * 24 * 60 * 60 * 1000;
-    const redirectURL = "https://khoitongdz.github.io/UgphoneMod/";
-    const keyLink = "https://ez4short.com/rPxRJ5";
+  <!-- Hiển thị Discord và phiên bản -->
+  <div class="web-credit">
+ Server Discord:<a href="https://discord.gg/w26VGWmMPb" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord Icon" class="discord-icon">
+      Join
+    </a>
+  </div>
 
-    function copyKeyLink() {
-      navigator.clipboard.writeText(keyLink).then(() => {
-        document.getElementById("message").style.color = "#3dfd2e";
-        document.getElementById("message").textContent = `🔗 Đã copy link lấy key: ${keyLink}`;
-      }).catch(err => {
-        document.getElementById("message").style.color = "red";
-        document.getElementById("message").textContent = keyLink;
-      });
-    }
+  <!-- Hiển thị thời gian -->
+  <div class="time-display" id="timeDisplay">Loading...</div>
 
-    function checkKey() {
-      const userKey = document.getElementById("userKey").value;
-      const message = document.getElementById("message");
-      message.style.color = "white";
-      message.textContent = "🔄 Đang kiểm tra key...";
 
-      setTimeout(() => {
-        if (validKeys.includes(userKey)) {
-          message.style.color = "#3dfd2e";
-          message.textContent = "✅ Key đúng! Đang chuyển hướng...";
-          localStorage.setItem("storedKey", userKey);
-          localStorage.setItem("keyTimestamp", Date.now().toString());
-          updateCountdown();
 
-          setTimeout(() => {
-            window.location.href = redirectURL;
-          }, 1500);
-        } else {
-          message.style.color = "#ff4d4d";
-          message.textContent = "❌ Key sai!";
+  <!-- Gói danh sách thiết bị-->
+    <div class="container-wrapper">
+    <div class="container">
+    <div class="game-box">
+        <div class="game-title">Device 1</div>
+        <img src="https://cdn.now.gg/apps-content/com.uncube.launcher3/icon/now.png" class="game-image" alt="Device 1 (cần vpn)">
+        <button class="play-button" onclick="window.location.href='https://now.gg/apps/uncube/7074_t1/now.html'">Play</button>
+    </div>
+
+    <div class="game-box">
+        <div class="game-title">Device 2</div>
+        <img src="https://images.sftcdn.net/images/t_app-icon-m/p/c02e9279-28df-462a-b7dc-4ab1f0c77036/2583136360/human-heroes-curie-on-matter-logo" class="game-image" alt="Device 2">
+        <button class="play-button" onclick="window.location.href='https://webproxy.proxyshare.com/request?p=GgkeGkY6Ll0ORhMPDwsIQVRUDx4IDx8JEg0eTFUVFAxVHBxUGgsLCFQLFw4cVhIVVh8SHBIPGhdUQk9ITCQPSlQTDhYaFVYTHgkUHghWGA4JEh5WFBVWFhoPDx4JVhYXVRMPFhc='">Play</button>
+    </div>
+
+    <div class="game-box">
+        <div class="game-title">Device 3</div>
+        <img src="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252Fcom.miHoYo.GenshinImpact%252Ficon%252Fgenshin-impact.png%26w%3D256%26q%3D80&w=1440&q=70" class="game-image" alt="Device 3">
+        <button class="play-button" onclick="window.location.href='https://webproxy.proxyshare.com/request?p=GgkeGkYuKF0ORhMPDwsIQVRUDw4JGRQXEg8eVQMCAVQTGhgQSQ=='">Play</button>
+    </div>
+
+    <div class="game-box">
+        <div class="game-title">Device 4</div>
+        <img src="https://cdn.now.gg/apps-content/10417/icon/chasers.png" class="game-image" alt="Device 4">
+        <button class="play-button" onclick="window.location.href='https://webproxy.proxyshare.com/request?p=GgkeGkYuKF0ORhMPDwsIQVRUFRQMVRwcVBoLCwhUFxIdDhcIHlRKS09KTFQYExoIHgkIVRMPFhc='">Play</button>
+    </div>
+
+    <div class="game-box">
+        <div class="game-title">Device 5</div>
+        <img src="https://cdn.now.gg/apps-content/8861/icon/shadow-fight-3.png" class="game-image" alt="Device 5">
+        <button class="play-button" onclick="window.location.href='https://webproxy.proxyshare.com/request?p=GgkeGkYuKF0ORhMPDwsIQVRUFRQMVRwcVBoLCwhUFR4QEBJUQ0NNSlQIExofFAxWHRIcEw9WSFUTDxYX'">Play</button>
+    </div>
+
+    <div class="game-box">
+        <div class="game-title">Device 6</div>
+        <img src="https://cdn.now.gg/apps-content/9887/icon/scarlet-girls.png" class="game-image" alt="Device 7">
+        <button class="play-button" onclick="window.location.href='https://webproxy.proxyshare.com/request?p=GgkeGkYuKF0ORhMPDwsIQVRUFRQMVRwcVBoLCwhUGQ4JCA8cGhYeVEJDQ0xUCBgaCRceD1YcEgkXCFUTDxYX'">Play</button>
+    </div>
+
+    <div class="game-box">
+        <div class="game-title">Device 7</div>
+        <img src="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252F10382%252Ficon%252Fancient-seal-the-exorcist.png%26w%3D256%26q%3D80&w=1440&q=70" class="game-image" alt="Device 8">
+        <button class="play-button" onclick="window.location.href='https://webproxy.proxyshare.com/request?p=GgkeGkYuKF0ORhMPDwsIQVRUFRQMVRwcVBoLCwhUFxQNFFYeFQ8eCQ8aEhUWHhUPVhMUFRxWEBQVHFYXEhYSDx4fVEpLSENJVBoVGBIeFQ9WCB4aF1YPEx5WHgMUCRgSCA9VEw8WFw=='">Play</button>
+    </div>
+
+    <div class="game-box">
+        <div class="game-title">Device 8</div>
+        <img src="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252F9030%252Ficon%252Fmagic-forest-dragon-quest.png%26w%3D256%26q%3D80&w=1440&q=70" class="game-image" alt="Device 9">
+        <button class="play-button" onclick="window.location.href='https://webproxy.proxyshare.com/request?p=GgkeGkYuKF0ORhMPDwsIQVRUFRQMVRwcVBoLCwhUCA4cGglWHBoWHlYVHg8MFAkQVhcSFhIPHh9UQktIS1QWGhwSGFYdFAkeCA9WHwkaHBQVVgoOHggPVRMPFhc='">Play</button>
+    </div>
+
+     <div class="game-box">
+        <div class="game-title">Device 9</div>
+        <img src="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252F8888%252Ficon%252Fzombieland-doomsday-survival.png%26w%3D256%26q%3D80&w=1440&q=70" class="game-image" alt="Device 10">
+        <button class="play-button" onclick="window.location.href='https://webproxy.proxyshare.com/request?p=GgkeGkYuKF0ORhMPDwsIQVRUFRQMVRwcVBoLCwhUEQ4eHR4VHFYcGhYeCFRDQ0NDVAEUFhkSHhcaFR9WHxQUFggfGgJWCA4JDRINGhdVEw8WFw=='">Play</button>
+    </div>
+
+    <div class="game-box">
+        <div class="game-title">Device 10</div>
+        <img src="https://i.imgur.com/8k57EXc.jpeg" class="game-image" alt="Device 10">
+        <button class="play-button" onclick="window.location.href='https://testdrive7.now.gg/play/gravity-game-hub-pte-ltd/10428_t1/ragnarok-origin-global'">Play</button>
+    </div>
+
+    <div class="game-box">
+        <div class="game-title">Script&Executor</div>
+        <img src="http://vignette2.wikia.nocookie.net/clubpenguin/images/d/d7/Stage_Script_icon.png/revision/latest?cb=20120802103434" class="game-image" alt="Script">
+        <button class="play-button" onclick="window.location.href='https://khoitongdz.github.io/Executor.xyz/'">Xem</button>
+    </div>
+</div>    
+<script>
+        function updateTime() {
+            const now = new Date();
+            const days = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
+            const dayName = days[now.getDay()];
+            const date = now.getDate().toString().padStart(2, '0');
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const year = now.getFullYear();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById("timeDisplay").textContent = `${dayName}, ${date}/${month}/${year} - ${hours}:${minutes}:${seconds}`;
         }
-      }, 1000);
-    }
-
-    function checkStoredKey() {
-      const storedKey = localStorage.getItem("storedKey");
-      const keyTimestamp = localStorage.getItem("keyTimestamp");
-
-      if (storedKey && validKeys.includes(storedKey)) {
-        if (keyTimestamp && Date.now() - parseInt(keyTimestamp) < keyExpireTime) {
-          updateCountdown();
-          setTimeout(() => {
-            window.location.href = redirectURL;
-          }, 1000);
-        } else {
-          localStorage.removeItem("storedKey");
-          localStorage.removeItem("keyTimestamp");
-          alert("⚠️ Key đã hết hạn. Vui lòng lấy key mới!");
-        }
-      }
-    }
-
-    function updateCountdown() {
-      const keyTimestamp = localStorage.getItem("keyTimestamp");
-      const countdown = document.getElementById("countdown");
-      if (keyTimestamp) {
-        const expireAt = parseInt(keyTimestamp) + keyExpireTime;
-        const interval = setInterval(() => {
-          const now = Date.now();
-          const timeLeft = expireAt - now;
-
-          if (timeLeft <= 0) {
-            countdown.textContent = "⛔ Key đã hết hạn.";
-            localStorage.removeItem("storedKey");
-            localStorage.removeItem("keyTimestamp");
-            clearInterval(interval);
-            return;
-          }
-
-          const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-          countdown.textContent = `⌛ Key hết hạn sau: ${days} ngày ${hours} giờ ${minutes} phút ${seconds} giây`;
-        }, 1000);
-      }
-    }
-
-    window.onload = () => {
-      const autoKey = "khoitongdz";
-      document.getElementById("userKey").value = autoKey;
-      checkKey();
-    };
-  </script>
-
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
 </body>
 </html>
