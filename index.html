@@ -1,1491 +1,250 @@
 
 <!DOCTYPE html>
-
-
-<html lang="vi" prefix="og: https://ogp.me/ns#">
-
-<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.3",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseenter","mouseout","mouseleave","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input","visibilitychange"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),this.F("domReady"),await this.T(),await this.j(),await this.I(),this.F("windowLoad"),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise((t=>setTimeout(t,500-Date.now()+this.lastTouchEnd))),this.H(),this.F("all"),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))}),{isRocket:!0})}o(){window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0}),{isRocket:!0}),window.addEventListener("pagehide",(()=>{this.onFirstUserAction=null}),{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",(function i(o){Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1})),event.preventDefault(),window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}))}),{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),this.savedUserEvents.length>0&&(t.stopPropagation(),t.stopImmediatePropagation()),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach((t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})))}U(){this.userEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0}))),this.savedUserEvents.forEach((t=>{t.target.dispatchEvent(new window[t.constructor.name](t.type,t))}))}m(){this.eventsMutationObserver=new MutationObserver((t=>{const e="return false";for(const i of t){if("attributes"===i.type){const t=i.target.getAttribute(i.attributeName);t&&t!==e&&(i.target.setAttribute("data-rocket-"+i.attributeName,t),i.target["rocket"+i.attributeName]=new Function("event",t),i.target.setAttribute(i.attributeName,e))}"childList"===i.type&&i.addedNodes.forEach((t=>{if(t.nodeType===Node.ELEMENT_NODE)for(const i of t.attributes)this.attributeEvents.includes(i.name)&&i.value&&""!==i.value&&(t.setAttribute("data-rocket-"+i.name,i.value),t["rocket"+i.name]=new Function("event",i.value),t.setAttribute(i.name,e))}))}})),this.eventsMutationObserver.observe(document,{subtree:!0,childList:!0,attributeFilter:this.attributeEvents})}H(){this.eventsMutationObserver.disconnect(),this.attributeEvents.forEach((t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach((e=>{e.setAttribute(t,e.getAttribute("data-rocket-"+t)),e.removeAttribute("data-rocket-"+t)}))}))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o})},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}F(t){"all"===t&&(EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener),this.savedEventListeners=this.savedEventListeners.filter((e=>{let i=e.type,o=e.target||window;return"domReady"===t&&"DOMContentLoaded"!==i&&"readystatechange"!==i||("windowLoad"===t&&"load"!==i&&"readystatechange"!==i&&"pageshow"!==i||(this.B(i,o)&&(i="rocket-"+i),e.remove?o.removeEventListener(i,e.func,e.options):o.addEventListener(i,e.func,e.options),!1))}))}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,(()=>{e[t].forEach((t=>t()))}),{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout((()=>i.bind(document)(o))):i.bind(document)(o)}return t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise((t=>{this.userActionTriggered?t():this.onFirstUserAction=t}))}async L(){return new Promise((t=>{document.addEventListener("DOMContentLoaded",(()=>{this.realDomReadyFired=!0,t()}),{isRocket:!0})}))}async I(){return this.realWindowLoadedFired?Promise.resolve():new Promise((t=>{window.addEventListener("load",t,{isRocket:!0})}))}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver((t=>{for(const e of t)e.addedNodes.forEach((t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise((e=>{const i=()=>{const i=this.pendingScripts.findIndex((e=>e.script===t));i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)}))})}))})),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async j(){await this.J(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.j()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.N(t,"preconnect")}async $(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",(()=>{i.setAttribute("data-rocket-status","failed-network"),e()}),{isRocket:!0}),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.$(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())}),{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.$(e),this.C(t)):Promise.resolve()}O(){this.N([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}N(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach((t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}})),document.head.appendChild(o)}W(){this.trash.forEach((t=>t.remove()))}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async G(){Date.now()-this.lastBreath>45&&(await this.J(),this.lastBreath=Date.now())}async J(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
-  <script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-C6EW1SJEPX"></script>
-  <script type="rocketlazyloadscript">
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-C6EW1SJEPX');
-  </script>
-  <script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="/wp-config.js" data-rocket-defer defer></script>
-  
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-  <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="icon" href="
-https://coronet.eu.com/wp-content/uploads/2024/10/cropped-PSMN-HD-031.png">
-
-  <!-- Meta social networks -->
-  
-  <!-- Temp Style -->
-  <style>
-	.post-thumbnail {
-		padding-bottom: 100%;
-	}
-	.post-thumbnail .wpst-trailer,
-	.post-thumbnail img {
-		object-fit: cover;
-	}
-
-	.video-debounce-bar {
-		background: #FF3565!important;
-	}
-
-			
-			button,
-		.button,
-		input[type="button"],
-		input[type="reset"],
-		input[type="submit"],
-		.label,
-		.label:visited,
-		.pagination ul li a,
-		.widget_categories ul li a,
-		.comment-reply-link,
-		a.tag-cloud-link,
-		.template-actors li a {
-			background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 70%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62b2b2b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-			-moz-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-			-webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-			-o-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-			box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-		}
-		input[type="text"],
-		input[type="email"],
-		input[type="url"],
-		input[type="password"],
-		input[type="search"],
-		input[type="number"],
-		input[type="tel"],
-		input[type="range"],
-		input[type="date"],
-		input[type="month"],
-		input[type="week"],
-		input[type="time"],
-		input[type="datetime"],
-		input[type="datetime-local"],
-		input[type="color"],
-		select,
-		textarea,
-		.wp-editor-container {
-			-moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), 0 0 5px black inset;
-			-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), 0 0 5px black inset;
-			-o-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), 0 0 5px black inset;
-			box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), 0 0 5px black inset;
-		}
-		#site-navigation {
-			background: #222222;
-			background: -moz-linear-gradient(top, #222222 0%, #333333 50%, #222222 51%, #151515 100%);
-			background: -webkit-linear-gradient(top, #222222 0%,#333333 50%,#222222 51%,#151515 100%);
-			background: linear-gradient(to bottom, #222222 0%,#333333 50%,#222222 51%,#151515 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#151515',GradientType=0 );
-			-moz-box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.12);
-			-webkit-box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.12);
-			-o-box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.12);
-			box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.12);
-		}
-		#site-navigation > ul > li:hover > a,
-		#site-navigation ul li.current-menu-item a {
-			background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 70%);
-			background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%);
-			background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62b2b2b', endColorstr='#00000000',GradientType=0 );
-			-moz-box-shadow: inset 0px 0px 2px 0px #000000;
-			-webkit-box-shadow: inset 0px 0px 2px 0px #000000;
-			-o-box-shadow: inset 0px 0px 2px 0px #000000;
-			box-shadow: inset 0px 0px 2px 0px #000000;
-			filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=2);
-		}
-		.rating-bar,
-		.categories-list .thumb-block .entry-header,
-		.actors-list .thumb-block .entry-header,
-		#filters .filters-select,
-		#filters .filters-options {
-			background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 70%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			-moz-box-shadow: inset 0px 0px 2px 0px #000000;
-			-webkit-box-shadow: inset 0px 0px 2px 0px #000000;
-			-o-box-shadow: inset 0px 0px 2px 0px #000000;
-			box-shadow: inset 0px 0px 2px 0px #000000;
-			filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=2);
-		}
-		.breadcrumbs-area {
-			background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 70%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		}
-	
-	.site-title a {
-		font-family: Open Sans;
-		font-size: 36px;
-	}
-	.site-branding .logo img {
-		max-width: 300px;
-		max-height: 120px;
-		margin-top: 0px;
-		margin-left: 0px;
-	}
-	a,
-	.site-title a i,
-	.thumb-block:hover .rating-bar i,
-	.categories-list .thumb-block:hover .entry-header .cat-title:before,
-	.required,
-	.like #more:hover i,
-	.dislike #less:hover i,
-	.top-bar i:hover,
-	.main-navigation .menu-item-has-children > a:after,
-	.menu-toggle i,
-	.main-navigation.toggled li:hover > a,
-	.main-navigation.toggled li.focus > a,
-	.main-navigation.toggled li.current_page_item > a,
-	.main-navigation.toggled li.current-menu-item > a,
-	#filters .filters-select:after,
-	.morelink i,
-	.top-bar .membership a i,
-	.thumb-block:hover .photos-count i {
-		color: #FF3565;
-	}
-	button,
-	.button,
-	input[type="button"],
-	input[type="reset"],
-	input[type="submit"],
-	.label,
-	.pagination ul li a.current,
-	.pagination ul li a:hover,
-	body #filters .label.secondary.active,
-	.label.secondary:hover,
-	.main-navigation li:hover > a,
-	.main-navigation li.focus > a,
-	.main-navigation li.current_page_item > a,
-	.main-navigation li.current-menu-item > a,
-	.widget_categories ul li a:hover,
-	.comment-reply-link,
-	a.tag-cloud-link:hover,
-	.template-actors li a:hover {
-		border-color: #FF3565!important;
-		background-color: #FF3565!important;
-	}
-	.rating-bar-meter,
-	.vjs-play-progress,
-	#filters .filters-options span:hover,
-	.bx-wrapper .bx-controls-direction a,
-	.top-bar .social-share a:hover,
-	.thumb-block:hover span.hd-video,
-	.featured-carousel .slide a:hover span.hd-video,
-	.appContainer .ctaButton {
-		background-color: #FF3565!important;
-	}
-	#video-tabs button.tab-link.active,
-	.title-block,
-	.widget-title,
-	.page-title,
-	.page .entry-title,
-	.comments-title,
-	.comment-reply-title,
-	.morelink:hover {
-		border-color: #FF3565!important;
-	}
-
-	/* Small desktops ----------- */
-	@media only screen  and (min-width : 64.001em) and (max-width : 84em) {
-		#main .thumb-block {
-			width: 16.66%!important;
-		}
-	}
-
-	/* Desktops and laptops ----------- */
-	@media only screen  and (min-width : 84.001em) {
-		#main .thumb-block {
-			width: 16.66%!important;
-		}
-	}
-
-</style>
-
-  <!-- Google Analytics -->
-  
-  <!-- Meta Verification -->
-  
-  	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
-	
-<!-- Tối ưu hóa công cụ tìm kiếm bởi Rank Math PRO - https://rankmath.com/ -->
-<title>Phimsex Dâm I Xem Phim Sex Gái Lồn Múp Không Che Mới Nhất 2025</title>
-<link crossorigin data-rocket-preload as="font" href="https://coronet.eu.com/wp-content/themes/retrotube/assets/stylesheets/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0" rel="preload"><link rel="preload" data-rocket-preload as="image" href="https://coronet.eu.com/wp-content/uploads/2024/10/PSMN-HD-021.png" fetchpriority="high">
-<meta name="description" content="Kho phimsex tổng với tốc độ load siêu nhanh cùng với những clip lộ link của các hot Tik Tok lồn múp không che mới cho ae mê sexviet"/>
-<meta name="robots" content="follow, index"/>
-<link rel="canonical" href="https://coronet.eu.com/" />
-<link rel="next" href="https://coronet.eu.com/page/2/" />
+<html lang="vi">
+<head>
+<title>Phim Sex, Xem Phim Sex Gái Xinh Lồn Múp Nhanh Nhất</title>
+<meta name="description" content="Phim sex nhanh miễn phí chất lượng cao, xem phim sex gái múp gợi cảm, tổng hợp nhiều thể loại hấp dẫn cho bạn giải trí sex online riêng tư cực cuốn."/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://sexmup3x.net/" />
+<link rel="next" href="https://sexmup3x.net/page/2/" />
+<meta http-equiv="content-language" content="vi" />
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+<meta name="google-site-verification" content="WiS4Tra-dMWpY69s2DQdSvS3F5IoX5WrhE7LQeSi6y0" />
+<link href="https://sexmup3x.net/favicon.ico" rel="shortcut icon"/>
+<base href="https://sexmup3x.net/"/>
+<meta name="robots" content="index, follow"/>
 <meta property="og:locale" content="vi_VN" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Phimsex Dâm I Xem Phim Sex Gái Lồn Múp Không Che Mới Nhất 2025" />
-<meta property="og:description" content="Kho phimsex tổng với tốc độ load siêu nhanh cùng với những clip lộ link của các hot Tik Tok lồn múp không che mới cho ae mê sexviet" />
-<meta property="og:url" content="https://coronet.eu.com/" />
-<meta property="og:site_name" content="phimsexhdmoinhat.com" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Phimsex Dâm I Xem Phim Sex Gái Lồn Múp Không Che Mới Nhất 2025" />
-<meta name="twitter:description" content="Kho phimsex tổng với tốc độ load siêu nhanh cùng với những clip lộ link của các hot Tik Tok lồn múp không che mới cho ae mê sexviet" />
-<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://coronet.eu.com/#person","name":"phimsexhdmoinhat.com","url":"https://coronet.eu.com"},{"@type":"WebSite","@id":"https://coronet.eu.com/#website","url":"https://coronet.eu.com","name":"phimsexhdmoinhat.com","publisher":{"@id":"https://coronet.eu.com/#person"},"inLanguage":"vi","potentialAction":{"@type":"SearchAction","target":"https://coronet.eu.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"CollectionPage","@id":"https://coronet.eu.com/#webpage","url":"https://coronet.eu.com/","name":"Phimsex D\u00e2m I Xem Phim Sex G\u00e1i L\u1ed3n M\u00fap Kh\u00f4ng Che M\u1edbi Nh\u1ea5t 2025","about":{"@id":"https://coronet.eu.com/#person"},"isPartOf":{"@id":"https://coronet.eu.com/#website"},"inLanguage":"vi"}]}</script>
-<!-- /Plugin SEO WordPress Rank Math -->
+<meta property="og:title" content="Phim Sex, Xem Phim Sex Gái Xinh Lồn Múp Nhanh Nhất" />
+<meta property="og:description" content="Phim sex nhanh miễn phí chất lượng cao, xem phim sex gái múp gợi cảm, tổng hợp nhiều thể loại hấp dẫn cho bạn giải trí sex online riêng tư cực cuốn." />
+<meta property="og:type" content="video" />
+<meta property="og:image" content="https://sexmup3x.net/bg.jpg" />
+<meta property="og:url" content="https://sexmup3x.net/" />
+<meta property="og:site_name" content="sexmup3x.net" />
+<script type="application/ld+json">
+[{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"SexMup3x","item":"https://sexmup3x.net/"},{"@type":"ListItem","position":2,"name":"Phim Sex, Xem Phim Sex Gái Xinh Lồn Múp Nhanh Nhất","item":"https://sexmup3x.net/"}]}]
+</script>
+<link rel="preload" href="https://sexmup3x.net/static/css/stylex.css?v=3" as="style">
+<link rel="stylesheet" href="https://sexmup3x.net/static/css/stylex.css?v=3">
+<link rel="stylesheet" href="/vlpx/css/lazyload.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script defer src="/static/main.js?v=1"></script>
+<link rel="preload" as="image" href="https://sexmup3x.net/file/cover/bo-chong-gio-tro-nghich-lon-cho-con-dau-kich-thich.jpg" fetchpriority="high">
+</head>
 
-
-<link rel="alternate" type="application/rss+xml" title="Dòng thông tin Phimsex - Tổng hợp 1000 video phim sex HOT nhất 2025 &raquo;" href="https://coronet.eu.com/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Phimsex - Tổng hợp 1000 video phim sex HOT nhất 2025 &raquo; Dòng bình luận" href="https://coronet.eu.com/comments/feed/" />
-<style id='wp-emoji-styles-inline-css' type='text/css'>
-
-	img.wp-smiley, img.emoji {
-		display: inline !important;
-		border: none !important;
-		box-shadow: none !important;
-		height: 1em !important;
-		width: 1em !important;
-		margin: 0 0.07em !important;
-		vertical-align: -0.1em !important;
-		background: none !important;
-		padding: 0 !important;
+<style>.pagenavi{margin-top:10px;text-align:center}.pagenavi a.active{color:#fff;background:#666}.pagenavi a{border:1px solid #dadada;padding:5px 15px;margin-right:5px;display:inline-block;margin-bottom:5px}
+@media only screen and (min-width: 960px) {
+	.quangcaomobile {
+	  display:none;
 	}
+}
+.mobi-pl{display:block}@media screen and (min-width:780px){.mobi-pl{display:none}}
+
+@media only screen and (max-width: 959px) {
+	.quangcaopc {
+	  display:none;
+	}
+}
+ .ads-hidden {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+.only-mobile {
+  display: block;
+  margin: 10px 0;
+  font-size: 15px;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .only-mobile {
+    display: none;
+  }
+}
+.category-links-mobile a {
+  color: #0cf;
+  text-decoration: underline;
+  margin: 0 5px;
+}
 </style>
-<link rel='stylesheet' id='wp-block-library-css' href='https://coronet.eu.com/wp-includes/css/dist/block-library/style.min.css?ver=76b0e49685d2528c5f61e9cef81d64fb' type='text/css' media='all' />
-<style id='classic-theme-styles-inline-css' type='text/css'>
-/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+
+<body>
+<div id="wrapper">
+<header>
+<div class="logo">
+<div itemscope="" itemtype="http://schema.org/Organization" class="logoWrapper"><a itemprop="url" href="/">
+<img itemprop="logo" title="sexmup3x.net" alt="sexmup3x.net" width="200" src="/static/img/logo.png"></a>
+</div>
+</div>
+<div id="primary-nav">
+<ul id="menu-header" class="menu">
+<li class="current-menu-item"><a class="on-click" href="https://sexmup3x.net/"><i class="fas fa-home home-menu"></i>Trang Chủ</a></li> 
+<li ><a href="https://sexmup3x.net/phim-sex-khong-che/">Không Che</a></li>
+<li ><a href="https://sexmup3x.net/phim-sex-nhat-ban/">Nhật Bản</a></li>
+<li ><a href="https://sexmup3x.net/phim-sex-chau-au/">Châu Âu</a></li>
+<li ><a href="https://sexmup3x.net/jav-hd/">Jav HD</a></li>   
+<li ><a href="https://sexmup3x.net/phim-sex-hiep-dam/">Hiếp Dâm</a></li>   
+<li ><a href="https://sexmup3x.net/phim-sex-loan-luan/">Loạn Luân</a></li>
+<li ><a  href="https://sexmup3x.net/xnxx/">XNXX</a></li>
+<li ><a href="https://sexmup3x.net/phim-sex-hay/">Phim Sex Hay</a></li>
+</ul>
+</div>
+</header>
+<div class="clear"></div>
+<div id="notice"><form class="search on-click" target="_blank" action="https://google.com/search" method="GET">
+<input type="text" name="q" placeholder="Tìm phim..." class="searchTxt">
+<input type=hidden name=domains value="https://sexmup3x.net/">
+<input type=hidden name=sitesearch value="https://sexmup3x.net/">
+<input type="submit" value="Tìm Kiếm" class="searchBtn on-click">
+</form></div><div class="clear"></div>
+</header>
+<div id="headerAdPC" class="xx-ads ads-pc ads-header ads-hidden" style="height: 210px; overflow: hidden;"></div>
+<div id="headerAdMobile" class="ads-mobile ads-hidden" style="height: 120px; overflow: hidden;"></div>             <main><div id="container"><h1 class="breadcrumb" title="Phim sex mới">Phim sex hay mới</h1><div class="video-box"><ul class="video-list-wrapper"><li class="video-list"><a title="Bố chồng giở trò nghịch lồn cho con dâu kích thích" href="https://sexmup3x.net/phim/bo-chong-gio-tro-nghich-lon-cho-con-dau-kich-thich/"><img class="video-image"src="https://sexmup3x.net/file/cover/bo-chong-gio-tro-nghich-lon-cho-con-dau-kich-thich.jpg"loading="eager" fetchpriority="high"alt="Bố chồng giở trò nghịch lồn cho con dâu kích thích"></a><div class="ribbon">HD</div><div class="video-name"><a title="Bố chồng giở trò nghịch lồn cho con dâu kích thích" href="https://sexmup3x.net/phim/bo-chong-gio-tro-nghich-lon-cho-con-dau-kich-thich/">Bố chồng giở trò nghịch lồn cho con dâu kích thích</a></div></li><li class="video-list"><a title="Chị hàng xóm cô đơn rủ sang nhà cho xem lồn dâm thủy" href="https://sexmup3x.net/phim/chi-hang-xom-co-don-ru-sang-nha-cho-xem-lon-dam-thuy/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/chi-hang-xom-co-don-ru-sang-nha-cho-xem-lon-dam-thuy.jpg"alt="Chị hàng xóm cô đơn rủ sang nhà cho xem lồn dâm thủy"></a><div class="ribbon">HD</div><div class="video-name"><a title="Chị hàng xóm cô đơn rủ sang nhà cho xem lồn dâm thủy" href="https://sexmup3x.net/phim/chi-hang-xom-co-don-ru-sang-nha-cho-xem-lon-dam-thuy/">Chị hàng xóm cô đơn rủ sang nhà cho xem lồn dâm thủy</a></div></li><li class="video-list"><a title="Gái massage trẻ đẹp chiều khách tới bến" href="https://sexmup3x.net/phim/gai-massage-tre-dep-chieu-khach-toi-ben/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/gai-massage-tre-dep-chieu-khach-toi-ben.jpg"alt="Gái massage trẻ đẹp chiều khách tới bến"></a><div class="ribbon">HD</div><div class="video-name"><a title="Gái massage trẻ đẹp chiều khách tới bến" href="https://sexmup3x.net/phim/gai-massage-tre-dep-chieu-khach-toi-ben/">Gái massage trẻ đẹp chiều khách tới bến</a></div></li><li class="video-list"><a title="Em nữ sinh bướm non dễ dãi buổi đầu đã địt dâm" href="https://sexmup3x.net/phim/em-nu-sinh-buom-non-de-dai-buoi-dau-da-dit-dam/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/em-nu-sinh-buom-non-de-dai-buoi-dau-da-dit-dam.jpg"alt="Em nữ sinh bướm non dễ dãi buổi đầu đã địt dâm"></a><div class="ribbon">HD</div><div class="video-name"><a title="Em nữ sinh bướm non dễ dãi buổi đầu đã địt dâm" href="https://sexmup3x.net/phim/em-nu-sinh-buom-non-de-dai-buoi-dau-da-dit-dam/">Em nữ sinh bướm non dễ dãi buổi đầu đã địt dâm</a></div></li><li class="video-list"><a title="Cho em gái được sướng bướm trước khi ngủ" href="https://sexmup3x.net/phim/cho-em-gai-duoc-suong-buom-truoc-khi-ngu/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/cho-em-gai-duoc-suong-buom-truoc-khi-ngu.jpg"alt="Cho em gái được sướng bướm trước khi ngủ"></a><div class="ribbon">HD</div><div class="video-name"><a title="Cho em gái được sướng bướm trước khi ngủ" href="https://sexmup3x.net/phim/cho-em-gai-duoc-suong-buom-truoc-khi-ngu/">Cho em gái được sướng bướm trước khi ngủ</a></div></li><li class="video-list"><a title="Chị dâu dáng đẹp như người mẫu bú cu thật phê" href="https://sexmup3x.net/phim/chi-dau-dang-dep-nhu-nguoi-mau-bu-cu-that-phe/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/chi-dau-dang-dep-nhu-nguoi-mau-bu-cu-that-phe.jpg"alt="Chị dâu dáng đẹp như người mẫu bú cu thật phê"></a><div class="ribbon">HD</div><div class="video-name"><a title="Chị dâu dáng đẹp như người mẫu bú cu thật phê" href="https://sexmup3x.net/phim/chi-dau-dang-dep-nhu-nguoi-mau-bu-cu-that-phe/">Chị dâu dáng đẹp như người mẫu bú cu thật phê</a></div></li><li class="video-list"><a title="Sống chung mái nhà với hai cô em gái múp dâm thật sướng chim" href="https://sexmup3x.net/phim/song-chung-mai-nha-voi-hai-co-em-gai-mup-dam-that-suong-chim/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/song-chung-mai-nha-voi-hai-co-em-gai-mup-dam-that-suong-chim.jpg"alt="Sống chung mái nhà với hai cô em gái múp dâm thật sướng chim"></a><div class="ribbon">HD</div><div class="video-name"><a title="Sống chung mái nhà với hai cô em gái múp dâm thật sướng chim" href="https://sexmup3x.net/phim/song-chung-mai-nha-voi-hai-co-em-gai-mup-dam-that-suong-chim/">Sống chung mái nhà với hai cô em gái múp dâm thật sướng chim</a></div></li><li class="video-list"><a title="Em gái tuổi 18 đút vào thật khít" href="https://sexmup3x.net/phim/em-gai-tuoi-18-dut-vao-that-khit/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/em-gai-tuoi-18-dut-vao-that-khit.jpg"alt="Em gái tuổi 18 đút vào thật khít"></a><div class="ribbon">HD</div><div class="video-name"><a title="Em gái tuổi 18 đút vào thật khít" href="https://sexmup3x.net/phim/em-gai-tuoi-18-dut-vao-that-khit/">Em gái tuổi 18 đút vào thật khít</a></div></li><li class="video-list"><a title="Thưởng thức cái lồn múp mu to gái dễ thương" href="https://sexmup3x.net/phim/thuong-thuc-cai-lon-mup-mu-to-gai-de-thuong/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/thuong-thuc-cai-lon-mup-mu-to-gai-de-thuong.jpg"alt="Thưởng thức cái lồn múp mu to gái dễ thương"></a><div class="ribbon">HD</div><div class="video-name"><a title="Thưởng thức cái lồn múp mu to gái dễ thương" href="https://sexmup3x.net/phim/thuong-thuc-cai-lon-mup-mu-to-gai-de-thuong/">Thưởng thức cái lồn múp mu to gái dễ thương</a></div></li><li class="video-list"><a title="Nàng dâu mặt xinh khiến bố chồng muốn nựng" href="https://sexmup3x.net/phim/nang-dau-mat-xinh-khien-bo-chong-muon-nung/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/nang-dau-mat-xinh-khien-bo-chong-muon-nung.jpg"alt="Nàng dâu mặt xinh khiến bố chồng muốn nựng"></a><div class="ribbon">HD</div><div class="video-name"><a title="Nàng dâu mặt xinh khiến bố chồng muốn nựng" href="https://sexmup3x.net/phim/nang-dau-mat-xinh-khien-bo-chong-muon-nung/">Nàng dâu mặt xinh khiến bố chồng muốn nựng</a></div></li><li class="video-list"><a title="Nữ hầu gái khoe cái bướm múp cho ông chủ nứng" href="https://sexmup3x.net/phim/nu-hau-gai-khoe-cai-buom-mup-cho-ong-chu-nung/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/nu-hau-gai-khoe-cai-buom-mup-cho-ong-chu-nung.jpg"alt="Nữ hầu gái khoe cái bướm múp cho ông chủ nứng"></a><div class="ribbon">HD</div><div class="video-name"><a title="Nữ hầu gái khoe cái bướm múp cho ông chủ nứng" href="https://sexmup3x.net/phim/nu-hau-gai-khoe-cai-buom-mup-cho-ong-chu-nung/">Nữ hầu gái khoe cái bướm múp cho ông chủ nứng</a></div></li><li class="video-list"><a title="Ông bố địt khỏe có màn làm tình cho con dâu thấy sướng" href="https://sexmup3x.net/phim/ong-bo-dit-khoe-co-man-lam-tinh-cho-con-dau-thay-suong/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/ong-bo-dit-khoe-co-man-lam-tinh-cho-con-dau-thay-suong.jpg"alt="Ông bố địt khỏe có màn làm tình cho con dâu thấy sướng"></a><div class="ribbon">HD</div><div class="video-name"><a title="Ông bố địt khỏe có màn làm tình cho con dâu thấy sướng" href="https://sexmup3x.net/phim/ong-bo-dit-khoe-co-man-lam-tinh-cho-con-dau-thay-suong/">Ông bố địt khỏe có màn làm tình cho con dâu thấy sướng</a></div></li><li class="video-list"><a title="Em mặt xinh cho các anh đồng nghiệp lần lượt địt lồn" href="https://sexmup3x.net/phim/em-mat-xinh-cho-cac-anh-dong-nghiep-lan-luot-dit-lon/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/em-mat-xinh-cho-cac-anh-dong-nghiep-lan-luot-dit-lon.jpg"alt="Em mặt xinh cho các anh đồng nghiệp lần lượt địt lồn"></a><div class="ribbon">HD</div><div class="video-name"><a title="Em mặt xinh cho các anh đồng nghiệp lần lượt địt lồn" href="https://sexmup3x.net/phim/em-mat-xinh-cho-cac-anh-dong-nghiep-lan-luot-dit-lon/">Em mặt xinh cho các anh đồng nghiệp lần lượt địt lồn</a></div></li><li class="video-list"><a title="Chị họ xinh đẹp chiều ý thằng em ham muốn tuổi lớn" href="https://sexmup3x.net/phim/chi-ho-xinh-dep-chieu-y-thang-em-ham-muon-tuoi-lon/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/chi-ho-xinh-dep-chieu-y-thang-em-ham-muon-tuoi-lon.jpg"alt="Chị họ xinh đẹp chiều ý thằng em ham muốn tuổi lớn"></a><div class="ribbon">HD</div><div class="video-name"><a title="Chị họ xinh đẹp chiều ý thằng em ham muốn tuổi lớn" href="https://sexmup3x.net/phim/chi-ho-xinh-dep-chieu-y-thang-em-ham-muon-tuoi-lon/">Chị họ xinh đẹp chiều ý thằng em ham muốn tuổi lớn</a></div></li><li class="video-list"><a title="Anh quân nhân khỏe mạnh một lúc địt phát bốn em" href="https://sexmup3x.net/phim/anh-quan-nhan-khoe-manh-mot-luc-dit-phat-bon-em/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/anh-quan-nhan-khoe-manh-mot-luc-dit-phat-bon-em.jpg"alt="Anh quân nhân khỏe mạnh một lúc địt phát bốn em"></a><div class="ribbon">HD</div><div class="video-name"><a title="Anh quân nhân khỏe mạnh một lúc địt phát bốn em" href="https://sexmup3x.net/phim/anh-quan-nhan-khoe-manh-mot-luc-dit-phat-bon-em/">Anh quân nhân khỏe mạnh một lúc địt phát bốn em</a></div></li><li class="video-list"><a title="Chịch vợ yêu mông dâm khiêu gợi buổi sáng thật đã" href="https://sexmup3x.net/phim/chich-vo-yeu-mong-dam-khieu-goi-buoi-sang-that-da/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/chich-vo-yeu-mong-dam-khieu-goi-buoi-sang-that-da.jpg"alt="Chịch vợ yêu mông dâm khiêu gợi buổi sáng thật đã"></a><div class="ribbon">HD</div><div class="video-name"><a title="Chịch vợ yêu mông dâm khiêu gợi buổi sáng thật đã" href="https://sexmup3x.net/phim/chich-vo-yeu-mong-dam-khieu-goi-buoi-sang-that-da/">Chịch vợ yêu mông dâm khiêu gợi buổi sáng thật đã</a></div></li><li class="video-list"><a title="Biểu cảm của gái teen khi địt nhiều thế thật xinh" href="https://sexmup3x.net/phim/bieu-cam-cua-gai-teen-khi-dit-nhieu-the-that-xinh/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/bieu-cam-cua-gai-teen-khi-dit-nhieu-the-that-xinh.jpg"alt="Biểu cảm của gái teen khi địt nhiều thế thật xinh"></a><div class="ribbon">HD</div><div class="video-name"><a title="Biểu cảm của gái teen khi địt nhiều thế thật xinh" href="https://sexmup3x.net/phim/bieu-cam-cua-gai-teen-khi-dit-nhieu-the-that-xinh/">Biểu cảm của gái teen khi địt nhiều thế thật xinh</a></div></li><li class="video-list"><a title="Nàng dâu ngoan để yên cho bố chồng sờ soạng kích thích" href="https://sexmup3x.net/phim/nang-dau-ngoan-de-yen-cho-bo-chong-so-soang-kich-thich/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/nang-dau-ngoan-de-yen-cho-bo-chong-so-soang-kich-thich.jpg"alt="Nàng dâu ngoan để yên cho bố chồng sờ soạng kích thích"></a><div class="ribbon">HD</div><div class="video-name"><a title="Nàng dâu ngoan để yên cho bố chồng sờ soạng kích thích" href="https://sexmup3x.net/phim/nang-dau-ngoan-de-yen-cho-bo-chong-so-soang-kich-thich/">Nàng dâu ngoan để yên cho bố chồng sờ soạng kích thích</a></div></li><li class="video-list"><a title="Doggy cô em dáng múp đàn hồi thật mẩy" href="https://sexmup3x.net/phim/doggy-co-em-dang-mup-dan-hoi-that-may/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/doggy-co-em-dang-mup-dan-hoi-that-may.jpg"alt="Doggy cô em dáng múp đàn hồi thật mẩy"></a><div class="ribbon">HD</div><div class="video-name"><a title="Doggy cô em dáng múp đàn hồi thật mẩy" href="https://sexmup3x.net/phim/doggy-co-em-dang-mup-dan-hoi-that-may/">Doggy cô em dáng múp đàn hồi thật mẩy</a></div></li><li class="video-list"><a title="Hai em học trò chiều dâm thầy địt some" href="https://sexmup3x.net/phim/hai-em-hoc-tro-chieu-dam-thay-dit-some/"><img class="video-image lazyload"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="data-src="https://sexmup3x.net/file/cover/hai-em-hoc-tro-chieu-dam-thay-dit-some.jpg"alt="Hai em học trò chiều dâm thầy địt some"></a><div class="ribbon">HD</div><div class="video-name"><a title="Hai em học trò chiều dâm thầy địt some" href="https://sexmup3x.net/phim/hai-em-hoc-tro-chieu-dam-thay-dit-some/">Hai em học trò chiều dâm thầy địt some</a></div></li></ul><div class="category-links-mobile only-mobile">🔥 Các thể loại hot:<a class="on-click" href="https://sexmup3x.net/phim-xxx/">XXX</a>,<a class="on-click" href="https://sexmup3x.net/phim-sex-khong-che/">Không Che</a>,<a class="on-click" href="https://sexmup3x.net/phim-sex-loan-luan/">Loạn Luân</a></div><div class="clr"></div><div class="pagenavi"><a href="/" class="active" aria-current="page">1</a><a href="https://sexmup3x.net/page/2/">2</a><a href="https://sexmup3x.net/page/3/">3</a><a href="https://sexmup3x.net/page/4/">4</a><a href="https://sexmup3x.net/page/5/">5</a><a href='https://sexmup3x.net/page/2/'>→</a></div></div></div></main>
+﻿<footer><div id="primary-nav"><ul id="menu-header" class="menu"><li class="current-menu-item"></li><li><a href="https://sexmup3x.net/phim-sex-trung-quoc/">Trung Quốc</a></li><li><a href="https://sexmup3x.net/phim-dit-nhau/">Địt Nhau</a></li><li><a href="https://sexmup3x.net/phim-sex-hoc-sinh/">Học Sinh</a></li><li><a href="https://sexmup3x.net/phim-sex-vung-trom/">Vụng Trộm</a></li><li><a href="https://sexmup3x.net/phim-sex-lau-xanh/">Lầu Xanh</a></li><li><a href="https://sexmup3x.net/phim-xxx/">XXX</a></li><li><a href="https://sexmup3x.net/xnxx/">XNXX</a></li><li><a href="https://sexmup3x.net/vlxx/">VLXX</a></li><li><a href="https://sexmup3x.net/phim-sex-hay/">Sex Hay</a></li></ul></div><div class="footer-wrap"><p>Copyright 2025 © <a title="Phim Sex, Xem Phim Sex Gái Xinh Lồn Múp Nhanh Nhất" href="https://sexmup3x.net/"><span class="url">SexMup3X.Net</span></a> All rights reserved.</p><p>Tuyển chọn rất nhiều <a href="https://sexmup3x.net/phim-sex-hay/">phim sex hay</a> tốc độ nhanh mang tới trải nghiệm sướng mắt, chúng tôi liên tục update những tập <a href="https://sexmup3x.net/">phim sex</a> chất lượng full HD miễn phí hoàn toàn. <br /> Phim mỗi ngày trên web được tổng hợp chọn lọc từ những trang web <a href="https://sexmup3x.net/">sex</a> nổi tiếng như <a href="https://sexmup3x.net/xnxx/" title="xnxx">xnxx</a>, <a href="https://sexmup3x.net/vlxx/" title="vlxx">vlxx</a>, <a href="https://sexmup3x.net/jav-hd/" title="jav">jav</a> và những trang web nổi tiếng khác trong và ngoài nước.  <br />Chúng tôi phục vụ những khách xem trên 18 tuổi, các bạn xem phim điều độ và có trách nhiệm hạn chế lạm dụng và các bạn nhỏ dưới tuổi xin vui lòng rời khỏi website ngay lập tức.</p></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+<a href="//whos.amung.us/stats/adsphimsextv"><img src="https://whos.amung.us/swidget/adsphimsextv" style="display:none;"></a>
+
+<script>
+function setCookie(name, value, minutes) {
+  const expires = minutes
+    ? `; expires=${new Date(Date.now() + minutes * 60000).toUTCString()}`
+    : '';
+  document.cookie = `${name}=${value || ''}${expires}; path=/`;
+}
+
+function getCookie(name) {
+  const nameEQ = `${name}=`;
+  const cookies = document.cookie.split(';');
+  for (let cookie of cookies) {
+    cookie = cookie.trim();
+    if (cookie.indexOf(nameEQ) === 0) {
+      return cookie.substring(nameEQ.length);
+    }
+  }
+  return null;
+}
+
+document.body.addEventListener('click', () => {
+  const clicks = parseInt(getCookie('bodyClicked')) || 0;
+  if (clicks < 3) {
+    setCookie('bodyClicked', clicks + 1, 60);
+  }
+});</script>
+<style type="text/css">
+.xx-ads img,.xx-ads iframe{max-width:100%}.xx-ads.catfix{position:fixed;bottom:0;right:0;left:0;margin:0 auto;line-height:0;width:300px;z-index:9}.xx-ads.ads-pc.catfix{width:728px}.xx-ads.ads-fr.catfix{right:0;left:inherit}.xx-ads.ads-fl.catfix{left:0;right:inherit}.xx-ads-close{position:absolute;top:-25px;right:0;height:20px;line-height:20px;background:#000;color:var(--color-core);cursor:pointer;padding:0 4px;z-index:999999}.ads-fl .xx-ads-close,.ads-fr .xx-ads-close{top:-25px}.ads-fl .xx-ads-close{right:inherit;left:0}.xx-ads-close a{color:#dacb46;font-size:13px}.ads-mobile{display:none}@media screen and (max-width:1000px){.ads-fl,.ads-fr{display:none}.ads-pc{display:none}.ads-mobile{display:block}.ads-header{margin-top:50px!important;margin-bottom:-60px!important;background:#2b2b2b;padding:4px}}.top-player{background:0 0;padding:0}.under-player{width:100%}.top-header{width:98%;padding:4px 0 2px}.ads-header{margin-top:60px;margin-bottom:-60px}.ad-content-header{overflow:hidden;padding:8px;margin-top:50px;margin-bottom:-68px}.ad-content{overflow:hidden;padding:8px}.ads{text-align:center;clear:both}.ads img{max-width:100%;display:inline-block;margin:5px auto}.ads a{display:inline-block;margin:0 auto}.ads.catfish-ad{position:fixed;bottom:0;right:0;left:0;margin:0 auto;width:300px;z-index:9999}.xx-ads{width:100%;text-align:center;margin:0 auto}.xx-ads img,.ad img{max-width:100%}.ads-wrap{margin:-5px auto;text-align:center;line-height:0;max-width:100%;display:inline-block;position:relative}.xx-ads.catfish{position:fixed;bottom:0;right:0;left:0;margin:0 auto;width:auto;z-index:9999}.xx-ads.ads-pc.catfish{width:fit-content}.xx-ads.ads-fr.catfish{right:0;left:inherit}.xx-ads.ads-fl.catfish{left:0;right:inherit}@media only screen and (max-width:1242px){.floatl{display:none}.floatr{display:none}}.floatl{position:fixed;margin:0 auto;z-index:9999;top:50px}.floatr{position:fixed;margin:0 auto;z-index:9999;top:50px}
 </style>
-<style id='global-styles-inline-css' type='text/css'>
-:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='cmplz-general-css' href='https://coronet.eu.com/wp-content/plugins/complianz-gdpr/assets/css/cookieblocker.min.css?ver=1747668202' type='text/css' media='all' />
-<link data-minify="1" rel='stylesheet' id='wpst-font-awesome-css' href='https://coronet.eu.com/wp-content/cache/min/1/wp-content/themes/retrotube/assets/stylesheets/font-awesome/css/font-awesome.min.css?ver=1751523402' type='text/css' media='all' />
-<link data-minify="1" rel='stylesheet' id='wpst-style-css' href='https://coronet.eu.com/wp-content/cache/min/1/wp-content/themes/retrotube/style.css?ver=1751523402' type='text/css' media='all' />
-<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://coronet.eu.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" data-rocket-defer defer></script>
-<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://coronet.eu.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" data-rocket-defer defer></script>
-<link rel="https://api.w.org/" href="https://coronet.eu.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://coronet.eu.com/xmlrpc.php?rsd" />
-<meta name="google-site-verification" content="ZAnu0tp3ZghiV0CyVMX5Qd6Qi-48koqFkBEb7n0kYi4" />
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  handleAdVisibility();
+  document.addEventListener("click", function (e) {
+    const closeBtn = e.target.closest(".xx-ads-close");
+    if (closeBtn) {
+      const adContainer = closeBtn.closest(".xx-ads");
+      if (adContainer) {
+        adContainer.style.display = "none";
+      }
+
+      const hiddenUntil = Date.now() + 3 * 60 * 1000;
+      setCookie("adsHiddenUntil", hiddenUntil, 3);
+
+      e.stopImmediatePropagation();
+    }
+  }, true); 
+});
+
+function handleAdVisibility() {
+  const ads = document.querySelectorAll(".xx-ads");
+  const clicks = parseInt(getCookie("bodyClicked")) || 0;
+  const hiddenUntil = parseInt(getCookie("adsHiddenUntil")) || 0;
+
+  if (clicks >= 4 || Date.now() < hiddenUntil) {
+    ads.forEach(ad => ad.style.display = "none");
+  } else {
+    ads.forEach(ad => ad.style.display = "");
+  }
+}
+
+function setCookie(name, value, minutes) {
+  const expires = minutes
+    ? `; expires=${new Date(Date.now() + minutes * 60000).toUTCString()}`
+    : "";
+  document.cookie = `${name}=${value || ""}${expires}; path=/`;
+}
+
+function getCookie(name) {
+  const nameEQ = `${name}=`;
+  const cookies = document.cookie.split(";");
+  for (let cookie of cookies) {
+    cookie = cookie.trim();
+    if (cookie.indexOf(nameEQ) === 0) {
+      return cookie.substring(nameEQ.length);
+    }
+  }
+  return null;
+}
+</script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+
+<script>
+  (function() {
+    const isBot = /bot|crawl|spider/i.test(navigator.userAgent);
+
+    function loadVNAdScript() {
+      const s = document.createElement('script');
+      s.setAttribute('data-cfasync', 'false');
+      s.setAttribute('data-clocid', '1978436');
+      s.async = true;
+      s.src = '//chubbyexemplaryhardiness.com/on.js';
+      s.onerror = () => crctcumg(15);
+      s.onload = () => crctcumg(15);
+      document.head.appendChild(s);
+    }
+
+    if (!isBot) {
+      setTimeout(loadVNAdScript, 300);
+    }
+  })();
+</script>
+
+
+<!-- Catfish Mobile -->
+<div id="catfishm" class="xx-ads ads-mobile catfix ads-hidden" style="opacity: 0; visibility: hidden; transition: opacity 0.5s ease; height: 141px;"></div>
+
+<!-- Catfish Desktop -->
+<div id="catfishd" class="xx-ads ads-pc catfix ads-hidden" style="opacity: 0; visibility: hidden; transition: opacity 0.5s ease; height: 251px;"></div>
+
+          Object.entries(htmlBlocks).forEach(([id, html]) => {
+            const el = document.getElementById(id);
+            if (el) {
+              el.innerHTML = html;
+              el.classList.remove("ads-hidden");
+              el.style.opacity = "1";
+              el.style.visibility = "visible";
+              el.style.pointerEvents = "auto";
+            }
+          });
+
+          if (typeof initializeAdClose === "function") initializeAdClose();
+          if (typeof handleAdVisibility === "function") handleAdVisibility();
+        }, 800);
+      }
+    });
+});
+</script>
+
+<script type="text/javascript">!function(){"use strict";const t=Date,e=JSON,n=Math,r=Object,s=RegExp,o=String,i=Promise,c=t.now,l=n.floor,a=n.random,u=e.stringify,h=o.fromCharCode;for(var d=window,g=d.document,f=d.Uint8Array,p=d.localStorage,m='ck]\\]]]g_]]oZZ^`QSSQOWKKLMXTRFNJCJ@@>JI?KAEF6;8F@@B052<::>8&%)0&.0#(" (|z"{y"}${u ~yxmlksrqlj{kcbsgot`cqp]^m\\g[]ZYdg_ZQQ[[[JMrq!$54# BPH<L@@EC=a6:lV).XEYU`TR"NKG_E("Y $VG|%Cw# @@on"l!p}}gfWzswcFxbcb``^>jiegBFQ6BA=?K/96G8;48$A3% !%!~FH;8B(GGD:>66A@@;=bVU%(0"##~##~1"x-!$zQ;nu;86 5J6~|m3=wftjpsd^hn_]YYUT%!"~%$$y__'.replace(/((\x40){2})/g,"$2").split("").map(((t,e)=>{const n=t.charCodeAt(0)-32;return n>=0&&n<95?h(32+(n+e)%95):t})).join(""),b=[0,11,20,27,34,40,46,52,57,59,61,67,73,79,81,83,86,89,93,97,102,108,115,123,125,126,131,139,140,140,141,159,160,163,166,169,174,177,184,202,228,234,240,248,275,276,281,287,292,293,297,307],v=0;v<b.length-1;v++)b[v]=m.substring(b[v],b[v+1]);var w=[b[0],b[1],b[2],b[3],b[4],b[5],b[6]];w.push(w[1]+w[4],w[1]+w[5],w[1]+b[7],w[0]+b[8]);const $={2:w[9],15:w[9],9:w[7],16:w[7],10:w[8],17:w[8]},y={2:w[3],15:w[3],9:w[4],16:w[4],10:w[5],17:w[5],5:b[9],7:b[9]},A={15:b[10],16:b[11],17:b[12]},x=[b[13],b[14],b[15],b[16],b[17],b[18],b[19],b[20],b[21],b[22]],_=(t,e)=>l(a()*(e-t+1))+t,E=t=>{const[e]=t.split(b[23]);let[n,r,o]=((t,e)=>{let[n,r,...s]=t.split(e);return r=[r,...s].join(e),[n,r,!!s.length]})(t,b[24]);o&&function(t,e){try{return(()=>{throw new Error(b[25])})()}catch(t){if(e)return e(t)}}(0,b[26]==typeof handleException?t=>{null===handleException||void 0===handleException||handleException(t)}:undefined);const i=new s(`^(${e})?//`,b[27]),[c,...l]=n.replace(i,b[28]).split(b[29]);return{protocol:e,origin:n,domain:c,path:l.join(b[29]),search:r}};function j(t){const e=new s(b[30]).exec(t.location.href);return e&&e[1]?e[1]:null}const C=(t,e)=>{const n=j(d);let{domain:r,search:s,origin:o}=E(t),i=s?s.split(b[31]):[];const c=i.length>4?[0,2]:[5,9];i.push(...((t,e)=>{const n=[],r=_(t,e);for(let t=0;t<r;t++)n.push(`${x[_(0,x.length-1)]}=${_(0,1)?_(1,999999):(t=>{let e=b[28];for(let n=0;n<t;n++)e+=h(_(97,122));return e})(_(2,6))}`);return n})(...c)),i=(t=>{const e=[...t];let n=e.length;for(;0!==n;){const t=l(a()*n);n--,[e[n],e[t]]=[e[t],e[n]]}return e})(i),i=i.filter((t=>!(t===`id=${e}`||n&&t===`di=${n}`)));const u=((t,e,n)=>{const r=((t,e)=>(e+t).split(b[28]).reduce(((t,e)=>31*t+e.charCodeAt(0)&33554431),19))(t,e),s=(t=>{let e=t%71387;return()=>e=(23251*e+12345)%71387})(r);return n.split(b[28]).map((t=>((t,e)=>{const n=t.charCodeAt(0),r=n<97||n>122?n:97+(n-97+e())%26,s=h(r);return b[27]===s?s+b[27]:s})(t,s))).join(b[28])})(e,r,i.join(b[31])).split(b[31]);return u.splice(_(0,i.length),0,b[32]+e),n&&u.splice(_(0,i.length),0,b[33]+n),o.replace(r,r+b[34])+b[24]+u.join(b[31])};function k(t,e){const n=j(t);return n?e.replace(b[35],`-${n}/`):e}function S(){if(((t,e=d,n=!1)=>{let r;try{if(r=e[t],!r)return!1;const n=b[36]+w[6]+b[37];return r.setItem(n,n),r.getItem(n),r.removeItem(n),!0}catch(t){return!!(!n&&(t=>t instanceof DOMException&&(22===t.code||1014===t.code||b[38]===t.name||b[39]===t.name))(t)&&r&&r.length>0)}})(b[40]+w[6]))try{const t=p.getItem(w[2]);return[t?e.parse(t):null,!1]}catch(t){return[null,!0]}return[null,!0]}function D(t,e,n){let r=(/https?:\/\//.test(t)?b[28]:b[42])+t;return e&&(r+=b[29]+e),n&&(r+=b[24]+n),r}const F=(()=>{var t;const[e,n]=S();if(!n){const n=null!==(t=function(t){if(!t)return null;const e={};return r.keys(t).forEach((n=>{const r=t[n];(function(t){const e=null==t?void 0:t[0],n=null==t?void 0:t[1];return b[41]==typeof e&&Number.isFinite(n)&&n>c()})(r)&&(e[n]=r)})),e}(e))&&void 0!==t?t:{};p.setItem(w[2],u(n))}return{get:t=>{const[e]=S();return null==e?void 0:e[t]},set:(t,e,r)=>{const s=[e,c()+1e3*r],[o]=S(),i=null!=o?o:{};i[t]=s,n||p.setItem(w[2],u(i))}}})(),N=(B=F,(t,e)=>{const{domain:n,path:r,search:s}=E(t),o=B.get(n);if(o)return[D(o[0],r,s),!1];if((null==e?void 0:e.replaceDomain)&&(null==e?void 0:e.ttl)){const{domain:t}=E(null==e?void 0:e.replaceDomain);return t!==n&&B.set(n,e.replaceDomain,e.ttl),[D(e.replaceDomain,r,s),!0]}return[t,!1]});var B;const I=t=>_(t-36e5,t+36e5),J=t=>{const e=new s(b[43]).exec(t.location.href),n=e&&e[1]&&+e[1];return n&&!isNaN(n)?(null==e?void 0:e[2])?I(n):n:I(c())},Q=[1,3,6,5,8,9,10,11,12,13,14,18];class G{constructor(t,e,n){this.b6d=t,this.ver=e,this.fbv=n,this.gd=t=>this.wu.then((e=>e.url(this.gfco(t)))),this.b6ab=t=>f.from(atob(t),(t=>t.charCodeAt(0))),this.sast=t=>0!=+t,this.el=g.currentScript,this.wu=this.iwa()}ins(){d[this.gcdk()]={};const t=Q.map((t=>this.gd(t).then((e=>{const n=e?k(d,e):void 0;return d[this.gcdk()][t]=n,n}))));return i.all(t).then((t=>(d[this.gcuk()]=t,!0)))}gfco(t){const e=d.navigator?d.navigator.userAgent:b[28],n=d.location.hostname||b[28];return[d.innerHeight,d.innerWidth,d.sessionStorage?1:0,J(d),0,t,n.slice(0,100),e.slice(0,15)].join(b[44])}iwa(){const t=d.WebAssembly&&d.WebAssembly.instantiate;return t?t(this.b6ab(this.b6d),{}).then((({instance:{exports:t}})=>{const e=t.memory,n=t.url,r=new TextEncoder,s=new TextDecoder(b[45]);return{url:t=>{const o=r.encode(t),i=new f(e.buffer,0,o.length);i.set(o);const c=i.byteOffset+o.length,l=n(i,o.length,c),a=new f(e.buffer,c,l);return s.decode(a)}}})):i.resolve(void 0)}cst(){const t=g.createElement(b[46]);return r.assign(t.dataset,{cfasync:b[47]},this.el?this.el.dataset:{}),t.async=!0,t}}class K extends G{constructor(t,e,n){super(t,e,n),this.gcuk=()=>w[0],this.gcdk=()=>w[10]+b[48],this.gfu=t=>`${k(d,t)}`,d.__cngfg__r=this.ins(),d.cl__abcngfg__ab__eu=C}in(t){!this.sast(t)||d[`zfgcodeloaded${y[t]}`]||d[$[t]]||this.ast(t)}ast(t){this.gd(t).then((e=>{var n;d[w[10]+b[49]+y[t]]=this.ver;const r=this.cst(),s=A[t],[o]=N(this.gfu(e));let i=o;if(s){const e=`data-${s}`,o=g.querySelector(`script[${e}]`);if(!o)throw new Error(`AANSF ${t}`);const i=(null!==(n=o.getAttribute(e))&&void 0!==n?n:b[28]).trim();o.removeAttribute(e),r.setAttribute(e,i)}else{const[t]=i.replace(/^https?:\/\//,b[28]).split(b[29]);i=i.replace(t,t+b[34])}r.src=i,g.head.appendChild(r)}))}}!function(){const t=new K("AGFzbQEAAAABHAVgAAF/YAN/f38Bf2ADf39/AX5gAX8AYAF/AX8DCQgAAQIBAAMEAAQFAXABAQEFBgEBgAKAAgYJAX8BQcCIwAILB2cHBm1lbW9yeQIAA3VybAADGV9faW5kaXJlY3RfZnVuY3Rpb25fdGFibGUBABBfX2Vycm5vX2xvY2F0aW9uAAcJc3RhY2tTYXZlAAQMc3RhY2tSZXN0b3JlAAUKc3RhY2tBbGxvYwAGCp8GCCEBAX9BuAhBuAgoAgBBE2xBoRxqQYfC1y9wIgA2AgAgAAuTAQEFfxAAIAEgAGtBAWpwIABqIgQEQEEAIQBBAyEBA0AgAUEDIABBA3AiBxshARAAIgZBFHBBkAhqLQAAIQMCfyAFQQAgBxtFBEBBACAGIAFwDQEaIAZBBnBBgAhqLQAAIQMLQQELIQUgACACaiADQawILQAAazoAACABQQFrIQEgAEEBaiIAIARJDQALCyACIARqC3ECA38CfgJAIAFBAEwNAANAIARBAWohAyACIAUgACAEai0AAEEsRmoiBUYEQCABIANMDQIDQCAAIANqMAAAIgdCLFENAyAGQgp+IAd8QjB9IQYgA0EBaiIDIAFHDQALDAILIAMhBCABIANKDQALCyAGC9ADAgN+B38gACABQQMQAiEDIAAgAUEFEAIhBUG4CCADQbAIKQMAIgQgAyAEVBtBqAgoAgAiAEEyaiIBIAFsQegHbK2AIgQgAEEOaiIKIABBBGsgA0KAgPHtxzBUIgsbrYCnIANC/4/Mp/YxVkEWdHI2AgAQABoQABogAkLo6NGDt87Oly83AABBB0EKQQggA0KA0MWXgzJUGyADQoCWop3lMFQiBhtBC0EMIAYbIAJBCGoQASEAEAAaIwBBEGsiASQAIABBLjoAACABQePetQM2AgwgAEEBaiEHQQAhACABQQxqIgwtAAAiCARAA0AgACAHaiAIOgAAIAwgAEEBaiIAai0AACIIDQALCyABQRBqJAAgACAHaiEBQbgIIAQgCq2AIAVCG4ZCAEKAgIAgQoCAgDBCgICACEKAgIAYIAVCCFEbQoCAgBJCgIDADSADQoCIl9qsMlQbIANCgJDMp/YxVBsgA0KAmMauzzFUGyAGGyALG4SEPgIAQQVBCCADQoCQ6oDTMlQiABshBhAAGkECQQRBBSAAGxAAQQNwIgAbIQcDQCABQS86AAAgACAJRiEIIAcgBiABQQFqEAEhASAJQQFqIQkgCEUNAAsgASACawsEACMACwYAIAAkAAsQACMAIABrQXBxIgAkACAACwUAQbwICws7AwBBgAgLBp6ipqyytgBBkAgLFJ+goaOkpaeoqaqrra6vsLGztLW3AEGoCAsOCgAAAD0AAAD/IzcJmgE=","10",b[50]);d["crctcumg"]=e=>t.in(e)}()}();</script>
+
 <!-- Google tag (gtag.js) -->
-<script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-YNP3J0WR18"></script>
-<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://coronet.eu.com/wp-content/cache/min/1/Badges/DMCABadgeHelper.min.js?ver=1751523402" data-rocket-defer defer> </script>
-<script type="rocketlazyloadscript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XN1RE1CVG6"></script>
+<script>
   window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
+  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-YNP3J0WR18');
-</script>
-
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type": "Casino","@id":"https://coronet.eu.com/#casino","name":"Phim Sex HD","legalName":"Phim Sex HD","description":"phimsex mang đến một thế giới giải trí người lớn đẳng cấp với kho phim đa dạng, chất lượng hình ảnh sắc nét và nội dung phong phú. Tất cả bộ phim đều được chọn lọc kỹ lưỡng, đảm bảo người xem có trải nghiệm tuyệt vời nhất. Không chỉ là nơi giải trí, phimsex còn tạo ra một không gian bảo mật tối ưu, giúp bạn an tâm khám phá mà không lo lắng về quyền riêng tư.","url":"https://coronet.eu.com/","address":{
-"@type": "PostalAddress","streetAddress":"38-48 Huyền Quang","addressLocality":"P.Tiền An","addressRegion":"Bắc Ninh","postalCode":"220000","addressCountry": {
-"@type": "Country",
-"name": "Việt Nam"
-}},"numberOfEmployees": {
-"@type": "QuantitativeValue",
-"value": "20"
-},"sameAs":["https://www.facebook.com/phimsexhdmoinhatt/","https://www.youtube.com/@phimsexhdmoinhatt","https://x.com/phimsexhdd","https://www.pinterest.com/phimsexhdmoinhatt/"],"currenciesAccepted": "VND",
-"paymentAccepted": ["Cash", "Credit Card"],
-"priceRange": "1 - 100000","email":"phimsexhdmoinhat.com@gmail.com","knowsLanguage": ["vi", "en"],
-"openingHoursSpecification": {
-"@type": "OpeningHoursSpecification",
-"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday","Sunday"],
-"opens": "00:00",
-"closes": "24:00"
-},
-"foundingLocation": {
-"@type": "Place","@id":"https://coronet.eu.com/#place","address": {
-"@type": "PostalAddress","streetAddress":"38-48 Huyền Quang","addressLocality":"P.Tiền An","addressRegion":"Bắc Ninh","postalCode":"220000","addressCountry": {
-"@type": "Country",
-"name": "Việt Nam"
-}}},"location": {
-"@type": "PostalAddress","@id":"https://coronet.eu.com/#postaladdress","streetAddress":"38-48 Huyền Quang","addressLocality":"P.Tiền An","addressRegion":"Bắc Ninh","postalCode":"220000","addressCountry": {
-"@type": "Country",
-"name": "VN"
-}},"contactPoint": {
-"@type": "ContactPoint","email":"phimsexhdmoinhat.com@gmail.com","areaServed": "VN"},"image": {
-"@type": "ImageObject","url":"","width":"500","height":"500"}},"logo": {
-"@type": "ImageObject","url":"","width":1200,"height":500}
-</script>
-
-
-
-<script type="rocketlazyloadscript">
-  function rcbStartCountdown(button) {
-    let timeLeft = 60;
-    const originalText = button.textContent;
-    button.disabled = true;
-    button.textContent = `Chờ ${timeLeft} giây`;
-
-    const countdown = setInterval(() => {
-      timeLeft--;
-      button.textContent = `Chờ ${timeLeft} giây`;
-      if (timeLeft <= 0) {
-        clearInterval(countdown);
-        button.textContent = 'Đang lấy mã...';
-
-        fetch('https://new970.online/api/data?type=PHIM')
-          .then(res => res.json())
-          .then(data => {
-            const code = data.value;
-            if (!code) throw new Error("Không có mã!");
-
-            const popup = document.createElement('div');
-            popup.className = 'rcb-popup';
-            popup.innerHTML = `
-      <div class="rcb-popup-content">
-        <span class="rcb-popup-close">×</span>
-        <h3>Bước 1: Đăng ký ngay</h3>
-        <button class="rcb-register-button">Đăng ký ngay</button>
-      </div>
-    `;
-            document.body.appendChild(popup);
-
-            const closePopup = () => {
-              popup.remove();
-              button.disabled = false;
-              button.textContent = originalText;
-            };
-
-            popup.querySelector('.rcb-popup-close').onclick = closePopup;
-
-            popup.querySelector('.rcb-register-button').onclick = () => {
-              // Open link in new tab
-              window.open('https://team19.online/keychungphim', '_blank');
-
-              // Show code in popup
-              popup.querySelector('.rcb-popup-content').innerHTML = `
-        <span class="rcb-popup-close">×</span>
-        <h3>Bước 2: Mã của bạn</h3>
-        <p class="rcb-code">${code}</p>
-      `;
-
-              popup.querySelector('.rcb-popup-close').onclick = closePopup;
-
-              popup.querySelector('.rcb-code').onclick = () => {
-                navigator.clipboard.writeText(code).then(() => {
-                  alert('Đã sao chép mã!');
-                }).catch(() => {
-                  alert('Không thể sao chép mã');
-                });
-              };
-            };
-          })
-          .catch(err => {
-            alert("Hiện tại hết mã thưởng. Mai quay lại nha ông chủ");
-            button.disabled = false;
-            button.textContent = originalText;
-          });
-      }
-    }, 1000);
-  }
-</script>
-
-
-<script type="rocketlazyloadscript">
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('.page-header h1.widget-title').forEach(function (el) {
-      var h2 = document.createElement('h2');
-      h2.className = el.className;
-      h2.innerHTML = el.innerHTML;
-      el.parentNode.replaceChild(h2, el);
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('.title-block h1.entry-title').forEach(function (el) {
-      var h2 = document.createElement('h2');
-      h2.className = el.className;
-      h2.innerHTML = el.innerHTML;
-      el.parentNode.replaceChild(h2, el);
-    });
-  });
-</script>
-<button id="opencf" class='opencf' onclick='catfishOn()'>[x] Mở</button>
-<div id='catfish' style='z-index:12;text-align:center;width:100%;position:fixed;bottom:-5px;left:0px'>
-  <button class='closecf' onclick='catfish()'>[x] Đóng</button>
-
-  <a class="img_footer_page" href='https://team19.online/keychungphim' target='_blank' rel="nofollow sponsored">
-    <img width="980" height="120" alt="img-gif-1" class='catfish-img' src='https://coronet.eu.com/wp-content/uploads/2025/06/GIF-1.gif'
-      style='max-width:100%' />
-  </a>
-  <a class="img_footer_page" href='https://team19.online/keychungphim' target='_blank' rel="nofollow sponsored">
-    <img width="980" height="120" alt="img-gif-2" class='catfish-img' src='https://coronet.eu.com/wp-content/uploads/2025/06/GIF-2.gif'
-      style='max-width:100%' />
-  </a>
-
-
-</div>
-<script type="rocketlazyloadscript">
-  function catfish() {
-    document.getElementById("catfish").style.display = "none";
-    document.getElementById("opencf").style.display = "block";
-  }
-  function catfishOn() {
-    document.getElementById("catfish").style.display = "block";
-    document.getElementById("opencf").style.display = "none";
-  }
-  catfishOn()
-</script>
-
-<script type="rocketlazyloadscript">
-  document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-      var target = document.querySelector(".responsive-player");
-
-      if (target) {
-        var container = document.createElement("div");
-        container.className = "happy-inside-player";
-        container.innerHTML = `
-                    <div class="zone-1"> 
-                        <a class="img_footer_page" href="https://team19.online/keychungphim" target="_blank" rel="nofollow sponsored">
-                            <img alt="img-gif-1" class="loading"
-                                src="https://coronet.eu.com/wp-content/uploads/2025/06/GIF-1.gif" style="max-width:100%" data-was-processed="true">
-                        </a>
-                    </div>
-                    <div class="zone-2"> 
-                        <a class="img_footer_page" href="https://team19.online/keychungphim" target="_blank" rel="nofollow sponsored">
-                            <img alt="img-gif-2" class=" loading"
-                                src="https://coronet.eu.com/wp-content/uploads/2025/06/GIF-2.gif" style="max-width:100%" data-was-processed="true">
-                        </a>
-                    </div>
-                    <div class="zone-3"> 
-                        <a class="img_footer_page" href="https://team19.online/keychungphim" target="_blank" rel="nofollow sponsored">
-                            <img alt="img-gif-2" class=" loading"
-                                src="https://coronet.eu.com/wp-content/uploads/2025/06/gif-coronet.gif" style="max-width:100%" data-was-processed="true">
-                        </a>
-                    </div>
-                    <button class="close close-text2">TẮT QUẢNG CÁO</button>
-                `;
-
-        target.appendChild(container);
-
-        container.querySelector(".close-text2").addEventListener("click", function () {
-          container.remove();
-        });
-      }
-    }, 200);
-    // }
-  });
-</script><link rel="icon" href="https://coronet.eu.com/wp-content/uploads/2025/05/cropped-cropped-PSMN-HD-031-32x32.png" sizes="32x32" />
-<link rel="icon" href="https://coronet.eu.com/wp-content/uploads/2025/05/cropped-cropped-PSMN-HD-031-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://coronet.eu.com/wp-content/uploads/2025/05/cropped-cropped-PSMN-HD-031-180x180.png" />
-<meta name="msapplication-TileImage" content="https://coronet.eu.com/wp-content/uploads/2025/05/cropped-cropped-PSMN-HD-031-270x270.png" />
-		<style type="text/css" id="wp-custom-css">
-				    .happy-inside-player img{
-    height: 140px;
-    max-width: 100%;
-    }
-.happy-inside-player{
-		display: flex !important;
-    flex-direction: column;
-	
-	 padding-bottom : 0px !important;
-	}
-a{
-                color: #ff3565;
-        }
-        a:hover{
-                color: #ffffff;
-        }    
-#sidebar h2{
-            background-color: #ff3565;
-    border-radius: 10px;
-    padding: 6px;
-    margin: 10px;
-    color: white;
-    font-weight: 700;
-    }
-    #sidebar ul{
-        margin: 15px !important;}
-.img_hi_a , .gif_new a {
-         display: block;
-  text-align: center;
-    }
-    .img_hi_a img , .gif_new a img , .catfish-img{
-          display: inline-block;
-    }
-
-.category-live-sex::before{
-	    color: white;
-    font-weight: 700;
-	margin: 2px;
-	z-index: 9999;
-	position: absolute;
-	padding: 0px 30px;
-	border-radius: 10px;
-	border: 1px red solid;
-	width: 5em;
-	height: 25px;
-	background-color: rgb(251 0 0);
-	background: #e3342f var(--wpr-bg-baff9b7c-c927-495a-9788-0547c32aa6ce) no-repeat 5px center;
-	margin-right: 0.25em;
-	content: " Live";
-	vertical-align: middle;
-}
-#menu-item-7749 a{
-	/*  margin-left: 15px; */
-	font-size: .75rem;
-	--tw-bg-opacity: 1;
-	background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
-	font-weight: 700;
-	padding-left: .75rem;
-	padding-right: .75rem;
-}
-#menu-item-7749 a::before {
-	content: '';
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	background-color: currentColor;
-	-webkit-mask-image: url("https://coronet.eu.com/wp-content/uploads/2025/05/download.svg");
-	-webkit-mask-repeat: no-repeat;
-	-webkit-mask-size: contain;
-	margin-right: 0.25em;
-	vertical-align: middle;
-}
-
-
-.rcb-popup {
-	position: fixed;
-	top: 0; left: 0;
-	width: 100%; height: 100%;
-	background: rgba(0,0,0,0.5);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 9999;
-}
-.rcb-popup-content {
-	background: white;
-	padding: 20px;
-	border-radius: 5px;
-	text-align: center;
-	position: relative;
-	max-width: 400px;
-	width: 90%;
-}
-.rcb-popup-close {
-	position: absolute;
-	top: 10px;
-	right: 15px;
-	font-size: 20px;
-	cursor: pointer;
-}
-.rcb-code {
-	font-size: 18px;
-	font-weight: bold;
-	margin: 10px 0;
-	cursor: pointer;
-	background: #f0f0f0;
-	padding: 10px;
-	border-radius: 3px;
-}
-.rcb-register-button {
-	display: inline-block;
-	background-color: #28a745;
-	color: white;
-	padding: 10px 20px;
-	text-decoration: none;
-	border-radius: 3px;
-	margin-top: 10px;
-}
-.rcb-register-button:hover {
-	background-color: #218838;
-}
-
-
-
-
-.gif_new{
-	margin-bottom: 50px;
-	margin-top: -50px;
-	display: flex
-		;
-	flex-direction: column;
-}
-#catfish {
-	z-index: 999999 !important; 
-}
-.dmca-badge{
-	text-align: right !important;
-	display: block !important;
-}
-#masthead .top-bar {
-	display: none !important;
-}
-.happy-header-mobile{
-	display: none !important;
-}
-#block-25{
-	width: 100% !important;
-}
-#menu-phimsex{
-	display: block !important;
-}
-#menu-phimsex li{
-	width: max-content !important;
-	float: left !important;
-}
-.img_gifhi{
-	transform: translate(-50%, -50%);
-	margin-left: 50%;
-	margin-top: 80px;
-	margin-bottom: 6px;
-	justify-items: center;
-	max-width: 1200px;
-	width: 1200px;
-	position: relative;
-	display: block;
-
-}
-.img_gifhi img{
-	margin-top: 15px;
-	width: auto;
-
-}
-
-@media (max-width: 768px) {
-   .happy-inside-player img{
-    height: 50px !important;
-    }
-	
-	.home  h1{
-		font-size: 21px !important;
-	}
-	.rcb-button {
-		display: block !important;
-	}
-	.km_hi88 {       		        padding-top: 90px !important;
-
-		margin-bottom: 0px !important;
-	}
-    .img_gifhi img {
-    margin-bottom: 50px !important;
-}
-	.rcb-button {
-		margin: 10px !important;
-		height: 50px !important;
-	}
-	.img_gifhi {
-		display: contents !important;
-	}
-
-	.text_km_hi88{
-		font-size: 18px !important;
-		font-weight: 700 !important;
-		line-height: revert !important;
-	}
-}
-.ctd_hme h1{
-	font-size: x-large !important;
-}
-.km_hi88{
-	    padding-top: 15px;
-	text-align: center;
-	margin: 10px;
-	margin-bottom: -50px;
-}
-.rcb-button {
-	background-color: #db0404;
-	color: #fff;
-	border: none;
-	padding: 10px 10px;
-	font-size: 14px;
-	border-radius: 5px;
-	cursor: pointer;
-	box-shadow: 0 0 10px white;
-	animation: glow 1s infinite;
-	transition: transform 0.2s;
-}
-
-@keyframes glow {
-	0% {
-		box-shadow: 0 0 10px white, 0 0 20px white;
-	}
-
-	33% {
-		box-shadow: 0 0 10px #db0404, 0 0 20px #db0404;
-	}
-
-	66% {
-		box-shadow: 0 0 10px #f6ff00, 0 0 20px #f6ff00;
-	}
-
-	100% {
-		box-shadow: 0 0 10px white, 0 0 20px white;
-	}
-}
-
-
-.rcb-button:first-of-type::before{
-	content: "";
-	margin-right: 5px;
-	margin-left: -14px;
-	margin-top: -6px;
-	width: 22px;
-	height: 50px;
-	background-image: var(--wpr-bg-ed7c29a1-0b87-4848-bd2e-d723c4cac15b);
-	background-position: center center;
-	background-size: 20px;
-	vertical-align: middle;
-	background-repeat: no-repeat;
-	display: inline-block;
-	-webkit-animation: ring 4s .7s ease-in-out infinite;
-	-webkit-transform-origin: 50% 4px;
-	-moz-animation: ring 4s .7s ease-in-out infinite;
-	-moz-transform-origin: 50% 4px;
-	animation: ring 4s .7s ease-in-out infinite;
-	transform-origin: 50% 4px;
-	left: 17px;
-	top: 2px;
-}
-
-.rcb-button {
-	background-color: #923326;
-	color: white;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	font-size: 16px;
-}
-
-.rcb-button:disabled {
-	background-color: #0073aa;
-	cursor: not-allowed;
-}
-
-.rcb-button.rcb-code-display {
-	background-color: #0073aa;
-	user-select: text;
-	cursor: copy;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	max-width: 200px;
-}
-/*     .button span:before {
-content: "";
-margin-right: 8px;
-width: 27px;
-height: 27px;
-background-image: url(https://167.99.71.215/wp-content/uploads/2023/03/fav_header.svg);
-background-position: center center;
-background-size: 20px;
-vertical-align: middle;
-background-repeat: no-repeat;
-display: inline-block;
--webkit-animation: ring 4s .7s ease-in-out infinite;
--webkit-transform-origin: 50% 4px;
--moz-animation: ring 4s .7s ease-in-out infinite;
--moz-transform-origin: 50% 4px;
-animation: ring 4s .7s ease-in-out infinite;
-transform-origin: 50% 4px;
-position: absolute;
-left: 17px;
-top: 2px;
-}
-
-*/
-
-
-
-
-
-
-
-
-
-.text_km_hi88{
-	margin: 7px;
-	line-height: 34px;
-	font-size: x-large;
-	line-height: 52px;
-}
-.ctd_hme {
-	text-align: center;
-}
-.ctd_hme h1 {
-	font-size: x-large;
-	text-transform: uppercase;
-	background-image: linear-gradient(-225deg, #dd5f11 0%, #FF0099 29%, #CC00FF 67%, #FFFF00 100%);
-	background-size: auto auto;
-	background-clip: border-box;
-	background-size: 200% auto;
-	color: #fff;
-	background-clip: text;
-	text-fill-color: transparent;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: textclip 2s linear infinite;
-	display: inline-block;
-}
-@keyframes textclip{
-	100% {
-		background-position: 200% center;
-	}
-}
-
-
-
-
-.closecf {
-	padding: 4px;
-	font-size: 14px;
-	/* height: 20px; */
-	position: absolute;
-	top: -35px;
-	color: white;
-	background: linear-gradient(to right, #C02425 0%, #F0CB35 50%, #C02425 100%);
-	background-size: 300% 100%;
-	transition: all .4s ease-in-out;
-	text-decoration: none;
-	cursor: pointer
-}
-.opencf {
-	padding: 1px 13px;
-	z-index: 99999;
-	left: 315px;
-	bottom: 5px;
-	/* position: absolute; */
-	font-size: 14px;
-	/* height: 20px; */
-	position: fixed;
-	/* top: -35px; */
-	color: white;
-	background: linear-gradient(to right, #C02425 0%, #F0CB35 50%, #C02425 100%);
-	background-size: 300% 100%;
-	transition: all .4s ease-in-out;
-	text-decoration: none;
-	cursor: pointer;
-}
-.closecf:hover {
-	background-position: 99% 0;
-	transition: all .4s ease-in-out
-}
-
-
-.img_footer_page , .img_footer_page *{
-	line-height: 0px !important;
-}
-
-
-.mb-catfish {
-	display: block;
-	margin: 0 auto
-}
-.catfish-img{
-	margin: -2px;
-	width: auto !important;
-}
-@media (min-width: 801px) {
-	.catfish-img {
-		height: 90px;
-	}
-}
-
-@media (max-width:800px) {
-	.opencf{
-		left: 0 !important;
-	}
-	.catfish-img {
-		height: auto;
-	}
-}
-
-@media (max-width:700px) {
-	.catfish-img {
-		height: auto;
-	}
-}
-
-@media (max-width:600px) {
-	.catfish-img {
-		height: auto;
-	}
-}
-
-@media (max-width:500px) {
-	.catfish-img {
-		height: auto;
-	}
-}
-
-@media (max-width:400px) {
-	.catfish-img {
-		height: auto;
-	}
-}
-
-@media (max-width:300px) {
-	.catfish-img {
-		height: auto;
-	}
-}
-
-@media (max-width:200px) {
-	.catfish-img {
-		height: auto;
-	}
-
-}
-
-
-
-
-
-
-
-
-
-#popup {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.7); /* nền mờ đen */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 999999;
-}
-
-.popup-content {
-	position: relative;
-	max-width: 700px;
-	width: 90%;
-	background: #fff;
-	border-radius: 10px;
-	overflow: hidden;
-	box-shadow: 0 0 20px rgba(0,0,0,0.6);
-}
-
-.popup-content img {
-	width: 100%;
-	display: block;
-}
-
-.popup-close {
-	position: absolute;
-	top: 5px;
-	right: 10px;
-	color: white;
-	font-size: 28px;
-	font-weight: bold;
-	cursor: pointer;
-	z-index: 10000;
-}
-body.category-live-sex::before{
-content: '';
-background: none !important;
-background-color: transparent !important;
-border: none !important;
-}
-
-
-
-
-
-@media screen and (max-width: 991.98px) {
-	  #menu-phimsex #menu-item-7749 {
-			    overflow-x: hidden;
-        width: 100% !important;
-        display: block !important;
-        text-align: center !important;
-    }
-}
-.title-home-custom{
-	font-size: 10px;
-}
-
-@media screen and (max-width: 768px) {
-.home	.title-home-custom{
-	font-size: 10px !important;
-}
-
-	
-}
-		</style>
-		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
-<noscript>
-<style id="wpr-lazyload-bg-nostyle">.category-live-sex::before{--wpr-bg-baff9b7c-c927-495a-9788-0547c32aa6ce: url('https://coronet.eu.com/wp-content/uploads/2025/05/download.svg');}.rcb-button:first-of-type::before{--wpr-bg-ed7c29a1-0b87-4848-bd2e-d723c4cac15b: url('https://167.99.71.215/wp-content/uploads/2023/03/fav_header.svg');}</style>
-</noscript>
-<script type="application/javascript">const rocket_pairs = [{"selector":".category-live-sex","style":".category-live-sex::before{--wpr-bg-baff9b7c-c927-495a-9788-0547c32aa6ce: url('https:\/\/coronet.eu.com\/wp-content\/uploads\/2025\/05\/download.svg');}","hash":"baff9b7c-c927-495a-9788-0547c32aa6ce","url":"https:\/\/coronet.eu.com\/wp-content\/uploads\/2025\/05\/download.svg"},{"selector":".rcb-button:first-of-type","style":".rcb-button:first-of-type::before{--wpr-bg-ed7c29a1-0b87-4848-bd2e-d723c4cac15b: url('https:\/\/167.99.71.215\/wp-content\/uploads\/2023\/03\/fav_header.svg');}","hash":"ed7c29a1-0b87-4848-bd2e-d723c4cac15b","url":"https:\/\/167.99.71.215\/wp-content\/uploads\/2023\/03\/fav_header.svg"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.19.0.1" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_auto_preload_fonts wpr_automatic_lazy_rendering wpr_oci wpr_image_dimensions wpr_minify_css wpr_preload_links wpr_host_fonts_locally wpr_mobile" /></head>
-
-<body data-rsssl=1
-  class="home blog wp-embed-responsive wp-theme-retrotube group-blog hfeed">
-  <div  id="page">
-    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-
-    <header  id="masthead" class="site-header" role="banner">
-
-      	<div  class="top-bar ">
-		<div class="top-bar-content row">
-			<div class="social-share">
-															<small>Follow us:</small>
-																																															</div>
-
-							<div class="membership">
-											<span class="welcome"><i class="fa fa-user"></i> <span>Welcome Guest</span></span>
-						<span class="login"><a href="#wpst-login">Login</a></span>
-						<span class="or">Or</span>
-						<span class="login"><a href="#wpst-register">Register</a></span>
-									</div>
-					</div>
-	</div>
-
-	
-      <div  class="site-branding row">
-        <div class="logo">
-                      <a href="https://coronet.eu.com/" rel="home" title="Phimsex - Tổng hợp 1000 video phim sex HOT nhất 2025"><img src="
-										https://coronet.eu.com/wp-content/uploads/2024/10/PSMN-HD-021.png					" alt="Phimsex - Tổng hợp 1000 video phim sex HOT nhất 2025"></a>
-          
-                      <p class="site-description">
-                              Kho phim Tổng với hơn 1000 video HOT nhất 2025              </p>
-                  </div>
-                  <div class="header-search small-search">
-    <form method="get" id="searchform" action="https://coronet.eu.com/">        
-                    <input class="input-group-field" value="Search..." name="s" id="s" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" type="text" />
-                
-        <input class="button fa-input" type="submit" id="searchsubmit" value="&#xf002;" />        
-    </form>
-</div>                          <div class="happy-header">
-            <a href="https://team19.online/keychungphim" target="_blank">
-  <img width="800" height="90" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%2090'%3E%3C/svg%3E" class="loading" data-was-processed="true" data-lazy-src="https://coronet.eu.com/wp-content/uploads/2025/05/GIF1.gif"><noscript><img width="800" height="90" src="https://coronet.eu.com/wp-content/uploads/2025/05/GIF1.gif" class="loading" data-was-processed="true"></noscript>
-</a>          </div>
-              </div><!-- .site-branding -->
-
-      <nav id="site-navigation" class="main-navigation
-					membership-enabled" role="navigation">
-        <div id="head-mobile"></div>
-        <div class="button-nav"></div>
-        <ul id="menu-phimsex" class="row"><li id="menu-item-2625" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2625"><a href="https://coronet.eu.com/phim-sex-viet-nam/">Phim Sex Việt Nam</a></li>
-<li id="menu-item-2626" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2626"><a href="https://coronet.eu.com/nhat-ban/">Nhật Bản</a></li>
-<li id="menu-item-2627" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2627"><a href="https://coronet.eu.com/khong-che/">Không Che</a></li>
-<li id="menu-item-2628" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2628"><a href="https://coronet.eu.com/au-my/">Âu Mỹ</a></li>
-<li id="menu-item-2629" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2629"><a href="https://coronet.eu.com/lo-clip/">LỘ CLIP</a></li>
-<li id="menu-item-2630" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2630"><a href="https://coronet.eu.com/viet-sub/">Việt Sub</a></li>
-<li id="menu-item-2631" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2631"><a href="https://coronet.eu.com/hentai/">Hentai</a></li>
-<li id="menu-item-4221" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4221"><a href="https://coronet.eu.com/sexviet/">Sexviet</a></li>
-<li id="menu-item-4222" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4222"><a href="https://coronet.eu.com/sex-hay/">sex Hay</a></li>
-<li id="menu-item-4223" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4223"><a href="https://coronet.eu.com/vlxx/">Vlxx</a></li>
-<li id="menu-item-4224" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4224"><a href="https://coronet.eu.com/xnxx/">Xnxx</a></li>
-<li id="menu-item-4225" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4225"><a href="https://coronet.eu.com/viet69/">viet69</a></li>
-<li id="menu-item-7749" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7749"><a href="https://coronet.eu.com/live-sex/">LIVE SEX</a></li>
-</ul>      </nav><!-- #site-navigation -->
-
-      <div  class="clear"></div>
-
-          </header>
-        <div  class="km_hi88">
-      <h1 class="title-home-custom">Phimsex Dâm I Xem Phim Sex Gái Lồn Múp Không Che Mới Nhất 2025</h1>
-      <a href="https://team19.online/keychungphim" target="_blank"><img width="980" height="120"
-          src="https://coronet.eu.com/wp-content/uploads/2025/06/GIF-3.gif" alt="Ảnh thêm vào" class="img_hi2"></a>
-      <a href="https://team19.online/keychungphim" target="_blank"><img width="980" height="120"
-          src="https://coronet.eu.com/wp-content/uploads/2025/06/GIF-4.gif" alt="Ảnh thêm vào" class="img_hi2"></a>
-
-      <div ><span class="text_km_hi88">1. TẠO TK MỚI —> 2. LẤY MÃ THƯỞNG —> 3. ĐỔI MÃ THƯỞNG</span></div>
-
-
-      <a class="rcb-button" href="https://team19.online/keychungphim" class="img_gifhi" target="_blank"><span>TẠO TK MỚI</span></a>
-      <a type="button" class="rcb-button" onclick="rcbStartCountdown(this)"> <span>LẤY MÃ THƯỞNG</span></a>
-      <a type="button" target="_blank" class="rcb-button" href="https://freecode-hi88.pages.dev/"> <span>ĐỔI MÃ THƯỞNG THÀNH TIỀN</span></a>
- <a type="button" target="_blank" class="rcb-button" href="https://t.me/nhancodekhuyenmaihi88"> <span>HỖ TRỢ</span></a>
-
-      <a href="https://team19.online/keychungphim" class="img_gifhi" target="_blank"><img width="980" height="120"
-          src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20980%20120'%3E%3C/svg%3E" alt="Ảnh thêm vào" class="img_hi" data-lazy-src="https://coronet.eu.com/wp-content/uploads/2025/06/GIF-5.gif"><noscript><img width="980" height="120"
-          src="https://coronet.eu.com/wp-content/uploads/2025/06/GIF-5.gif" alt="Ảnh thêm vào" class="img_hi"></noscript></a>
-
-      <div  class="gif_new">
-        <a href="https://team19.online/keychungphim" target="_blank"><img width="980" height="120"
-            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20980%20120'%3E%3C/svg%3E" alt="Ảnh thêm vào"
-            class="img_hi2" data-lazy-src="https://coronet.eu.com/wp-content/uploads/2025/06/gif-coronet.gif"><noscript><img width="980" height="120"
-            src="https://coronet.eu.com/wp-content/uploads/2025/06/gif-coronet.gif" alt="Ảnh thêm vào"
-            class="img_hi2"></noscript></a>
-      </div>
-      <!--<div class="gif_new">-->
-      <!--  <a href="https://team19.online/keychungphim" target="_blank"><img-->
-      <!--      src="https://coronet.eu.com/wp-content/uploads/2025/05/GIF-1.gif" alt="Ảnh thêm vào" width="980"-->
-      <!--      class="img_hi3"></a>-->
-      <!--</div>-->
-    </div>
-
-    <!-- #masthead -->
-
-
-
-    
-    
-	
-    <div  id="content" class="site-content row">
-	<div  id="primary" class="content-area with-sidebar-right">
-		<main id="main" class="site-main with-sidebar-right" role="main">
-
-		
-				<header class="page-header">
-					<h2 class="widget-title">Latest videos</h2>
-					    <div id="filters">        
-        <div class="filters-select"><i class="fa fa-filter"></i>            <div class="filters-options">
-                                	
-                    <span><a class="active" href="/?filter=latest">Latest videos</a></span>
-                    <span><a class="" href="/?filter=most-viewed">Most viewed videos</a></span>                    <span><a class="" href="/?filter=longest">Longest videos</a></span>			
-                    <span><a class="" href="/?filter=popular">Popular videos</a></span>			
-                    <span><a class="" href="/?filter=random">Random videos</a></span>	
-                            </div>
-        </div>
-    </div>
-				</header><!-- .page-header -->
-
-				<div class="videos-list">
-					
-<article data-video-uid="1" data-post-id="11625" class="loop-video thumb-block post-11625 post type-post status-publish format-standard has-post-thumbnail hentry category-phim-sex-viet-nam category-sexviet category-viet69 category-vlxx tag-phim-sex tag-phim-sex-viet tag-phim-sex-viet-nam tag-phimsex tag-sex-viet tag-sex-viet-nam tag-sex-vn tag-sexviet tag-viet69 tag-vlxx tag-xxx">
-	<a href="https://coronet.eu.com/phimsex-xxx/" title="Phimsex xxx Giữa siêu thị đông người mà anh bắt em bú cu">
-		<div class="post-thumbnail">
-						<div class="post-thumbnail-container"><img width="300" height="300" data-src="https://coronet.eu.com/wp-content/uploads/2025/07/phimsex-xxx.jpg" alt="Phimsex xxx Giữa siêu thị đông người mà anh bắt em bú cu"></div>						<span class="views"><i class="fa fa-eye"></i> 57K</span>			<span class="duration"><i class="fa fa-clock-o"></i></span>		</div>
-		<div class="rating-bar"><div class="rating-bar-meter" style="width:86%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>86%</span></div>		<header class="entry-header">
-			<span>Phimsex xxx Giữa siêu thị đông người mà anh bắt em bú cu</span>
-		</header>
-	</a>
-</article>
-
-<article data-video-uid="2" data-post-id="11622" class="loop-video thumb-block post-11622 post type-post status-publish format-standard has-post-thumbnail hentry category-phim-sex-viet-nam category-sexviet category-viet69 category-vlxx tag-phim-sex tag-phim-sex-viet tag-phim-sex-viet-nam tag-phimsex tag-porn tag-sex-viet tag-sex-viet-nam tag-sex-vn tag-sexviet tag-viet69 tag-vlxx">
-	<a href="https://coronet.eu.com/phimsex-porn-lan-dau-du/" title="Phimsex porn lần đầu đụ nhẹ vậy mà em học sinh 2k9 cứ than đau">
-		<div class="post-thumbnail">
-						<div class="post-thumbnail-container"><img width="300" height="300" data-src="https://coronet.eu.com/wp-content/uploads/2025/07/phimsex-porn-lan-dau-du.jpg" alt="Phimsex porn lần đầu đụ nhẹ vậy mà em học sinh 2k9 cứ than đau"></div>						<span class="views"><i class="fa fa-eye"></i> 79K</span>			<span class="duration"><i class="fa fa-clock-o"></i></span>		</div>
-		<div class="rating-bar"><div class="rating-bar-meter" style="width:85%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>85%</span></div>		<header class="entry-header">
-			<span>Phimsex porn lần đầu đụ nhẹ vậy mà em học sinh 2k9 cứ than đau</span>
-		</header>
-	</a>
-</article>
-
-<article data-video-uid="3" data-post-id="11591" class="loop-video thumb-block post-11591 post type-post status-publish format-standard has-post-thumbnail hentry category-phim-sex-viet-nam category-sexviet category-viet69 category-vlxx tag-chaturbate tag-dit-nhau tag-khieu-dam tag-phim-sex tag-phim-sex-viet tag-phim-sex-viet-nam tag-phimsex tag-sex-viet tag-sex-viet-nam tag-sex-vn tag-sexviet tag-viet69 tag-vlxx">
-	<a href="https://coronet.eu.com/tuyen-tap-phimsex-chaturbate/" title="Tuyển tập phimsex chaturbate anh bắt em lên giường khiêu dâm rồi mới địt">
-		<div class="post-thumbnail">
-						<div class="post-thumbnail-container"><img width="300" height="300" data-src="https://coronet.eu.com/wp-content/uploads/2025/07/tuyen-tap-phimsex-chaturbate.jpg" alt="Tuyển tập phimsex chaturbate anh bắt em lên giường khiêu dâm rồi mới địt"></div>						<span class="views"><i class="fa fa-eye"></i> 16K</span>			<span class="duration"><i class="fa fa-clock-o"></i></span>		</div>
-		<div class="rating-bar"><div class="rating-bar-meter" style="width:83%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>83%</span></div>		<header class="entry-header">
-			<span>Tuyển tập phimsex chaturbate anh bắt em lên giường khiêu dâm rồi mới địt</span>
-		</header>
-	</a>
-</article>
-
-<article data-video-uid="4" data-post-id="11617" class="loop-video thumb-block post-11617 post type-post status-publish format-standard has-post-thumbnail hentry category-hoc-sinh-lo-clip category-khong-che category-lo-clip category-nhat-ban category-phim-sex-viet-nam category-sex-hay category-sexviet category-trung-quoc category-viet-sub category-viet69 category-vlxx category-xnxx">
-	<a href="https://coronet.eu.com/xnxx-indian/" title="xnxx indian bồn chứa tinh dâm đãng">
-		<div class="post-thumbnail">
-						<div class="post-thumbnail-container"><img width="300" height="300" data-src="https://coronet.eu.com/wp-content/uploads/2025/07/xnxx-indian-.jpg" alt="xnxx indian bồn chứa tinh dâm đãng"></div>						<span class="views"><i class="fa fa-eye"></i> 32K</span>			<span class="duration"><i class="fa fa-clock-o"></i></span>		</div>
-		<div class="rating-bar"><div class="rating-bar-meter" style="width:86%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>86%</span></div>		<header class="entry-header">
-			<span>xnxx indian bồn chứa tinh dâm đãng</span>
-		</header>
-	</a>
-</article>
-
-<article data-video-uid="5" data-post-id="11613" class="loop-video thumb-block post-11613 post type-post status-publish format-standard has-post-thumbnail hentry category-hoc-sinh-lo-clip category-khong-che category-lo-clip category-nhat-ban category-phim-sex-viet-nam category-sex-hay category-sexviet category-trung-quoc category-viet-sub category-viet69 category-vlxx category-xnxx tag-phim-sex tag-phim-sex-viet tag-phim-sex-viet-nam tag-phimsex tag-sex-viet tag-sex-viet-nam tag-sex-vn tag-sexviet tag-viet69 tag-vlxx">
-	<a href="https://coronet.eu.com/xxx-hd-videos/" title="xxx hd videos em nữ sinh vú bự địt muốn mềm con cu">
-		<div class="post-thumbnail">
-						<div class="post-thumbnail-container"><img width="300" height="300" data-src="https://coronet.eu.com/wp-content/uploads/2025/07/xxx-hd-videos.jpg" alt="xxx hd videos em nữ sinh vú bự địt muốn mềm con cu"></div>						<span class="views"><i class="fa fa-eye"></i> 59K</span>			<span class="duration"><i class="fa fa-clock-o"></i></span>		</div>
-		<div class="rating-bar"><div class="rating-bar-meter" style="width:86%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>86%</span></div>		<header class="entry-header">
-			<span>xxx hd videos em nữ sinh vú bự địt muốn mềm con cu</span>
-		</header>
-	</a>
-</article>
-
-<article data-video-uid="6" data-post-id="11608" class="loop-video thumb-block post-11608 post type-post status-publish format-standard has-post-thumbnail hentry category-hoc-sinh-lo-clip category-khong-che category-lo-clip category-nhat-ban category-phim-sex-viet-nam category-sex-hay category-sexviet category-trung-quoc category-viet-sub category-viet69 category-vlxx category-xnxx tag-phim-sex tag-phim-sex-viet tag-phim-sex-viet-nam tag-phimsex tag-sex-viet tag-sex-viet-nam tag-sex-vn tag-sexviet tag-viet69 tag-vlxx">
-	<a href="https://coronet.eu.com/alyx-xxx/" title="Alyx xxx tất cả chỉ còn là kỉ niệm của đôi ta">
-		<div class="post-thumbnail">
-						<div class="post-thumbnail-container"><img width="300" height="300" data-src="https://coronet.eu.com/wp-content/uploads/2025/07/Alyx-xxx.jpg" alt="Alyx xxx tất cả chỉ còn là kỉ niệm của đôi ta"></div>						<span class="views"><i class="fa fa-eye"></i> 31K</span>			<span class="duration"><i class="fa fa-clock-o"></i></span>		</div>
-		<div class="rating-bar"><div class="rating-bar-meter" style="width:83%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>83%</span></div>		<header class="entry-header">
-			<span>Alyx xxx tất cả chỉ còn là kỉ niệm của đôi ta</span>
-		</header>
-	</a>
-</article>
-
-<article data-video-uid="7" data-post-id="11602" class="loop-video thumb-block post-11602 post type-post status-publish format-standard has-post-thumbnail hentry category-hoc-sinh-lo-clip category-khong-che category-lo-clip category-nhat-ban category-phim-sex-viet-nam category-sex-hay category-sexviet category-trung-quoc category-viet-sub category-viet69 category-vlxx category-xnxx tag-phim-sex tag-phim-sex-viet tag-phim-sex-viet-nam tag-phimsex tag-sex-viet tag-sex-viet-nam tag-sex-vn tag-sexviet tag-viet69 tag-vlxx">
-	<a href="https://coronet.eu.com/romantic-sex-videos/" title="Romantic sex videos chia tay là lúc em lên clip hihi">
-		<div class="post-thumbnail">
-						<div class="post-thumbnail-container"><img width="300" height="300" data-src="https://coronet.eu.com/wp-content/uploads/2025/07/Romantic-sex-videos.jpg" alt="Romantic sex videos chia tay là lúc em lên clip hihi"></div>						<span class="views"><i class="fa fa-eye"></i> 34K</span>			<span class="duration"><i class="fa fa-clock-o"></i></span>		</div>
-		<div class="rating-bar"><div class="rating-bar-meter" style="width:85%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>85%</span></div>		<header class="entry-header">
-			<span>Romantic sex videos chia tay là lúc em lên clip hihi</span>
-		</header>
-	</a>
-</article>
-
-<article data-video-uid="8" data-post-id="11597" class="loop-video thumb-block post-11597 post type-post status-publish format-standard has-post-thumbnail hentry category-khong-che category-hoc-sinh-lo-clip category-lo-clip category-nhat-ban category-phim-sex-viet-nam category-sex-hay category-sexviet category-trung-quoc category-viet-sub category-viet69 category-vlxx category-xnxx tag-phim-sex tag-phim-sex-viet tag-phim-sex-viet-nam tag-phimsex tag-sex-viet tag-sex-viet-nam tag-sex-vn tag-sexviet tag-viet69 tag-vlxx">
-	<a href="https://coronet.eu.com/hdporn/" title="HDporn em xinh nên em bị địt">
-		<div class="post-thumbnail">
-						<div class="post-thumbnail-container"><img width="300" height="300" data-src="https://coronet.eu.com/wp-content/uploads/2025/07/HDporn.jpg" alt="HDporn em xinh nên em bị địt"></div>						<span class="views"><i class="fa fa-eye"></i> 15K</span>			<span class="duration"><i class="fa fa-clock-o"></i></span>		</div>
-		<div class="rating-bar"><div class="rating-bar-meter" style="width:86%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>86%</span></div>		<header class="entry-header">
-			<span>HDporn em xinh nên em bị địt</span>
-		</header>
-	</a>
-</article>
-
-<article data-video-uid="9" data-post-id="11593" class="loop-video thumb-block post-11593 post type-post status-publish format-standard has-post-thumbnail hentry category-hoc-sinh-lo-clip category-khong-che category-lo-clip category-nhat-ban category-phim-sex-viet-nam category-sex-hay category-sexviet category-trung-quoc category-viet-sub category-viet69 category-vlxx category-xnxx tag-phim-sex tag-phim-sex-viet tag-phim-sex-viet-nam tag-phimsex tag-sex-viet tag-sex-viet-nam tag-sex-vn tag-sexviet tag-viet69 tag-vlxx">
-	<a href="https://coronet.eu.com/yarrak/" title="Yarrak Ngoại tình với em mới cưới Phần 2">
-		<div class="post-thumbnail">
-						<div class="post-thumbnail-container"><img width="300" height="300" data-src="https://coronet.eu.com/wp-content/uploads/2025/07/Yarrak.jpg" alt="Yarrak Ngoại tình với em mới cưới Phần 2"></div>						<span class="views"><i class="fa fa-eye"></i> 25K</span>			<span class="duration"><i class="fa fa-clock-o"></i></span>		</div>
-		<div class="rating-bar"><div class="rating-bar-meter" style="width:85%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>85%</span></div>		<header class="entry-header">
-			<span>Yarrak Ngoại tình với em mới cưới Phần 2</span>
-		</header>
-	</a>
-</article>
-
-<article data-video-uid="10" data-post-id="11589" class="loop-video thumb-block post-11589 post type-post status-publish format-standard has-post-thumbnail hentry category-hoc-sinh-lo-clip category-khong-che category-lo-clip category-nhat-ban category-phim-sex-viet-nam category-sex-hay category-sexviet category-trung-quoc category-viet-sub category-viet69 category-vlxx category-xnxx tag-phim-sex tag-phim-sex-viet tag-phim-sex-viet-nam tag-phimsex tag-sex-viet tag-sex-viet-nam tag-sex-vn tag-sexviet tag-viet69 tag-vlxx">
-	<a href="https://coronet.eu.com/liseli-porno/" title="Liseli porno ngoại tình với em gái mới cưới hihi">
-		<div class="post-thumbnail">
-						<div class="post-thumbnail-container"><img width="300" height="300" data-src="https://coronet.eu.com/wp-content/uploads/2025/07/Liseli-porno.jpg" alt="Liseli porno ngoại tình với em gái mới cưới hihi"></div>						<span class="views"><i class="fa fa-eye"></i> 39K</span>			<span class="duration"><i class="fa fa-clock-o"></i></span>		</div>
-		<div class="rating-bar"><div class="rating-bar-meter" style="width:82%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>82%</span></div>		<header class="entry-header">
-			<span>Liseli porno ngoại tình với em gái mới cưới hihi</span>
-		</header>
-	</a>
-</article>
-				</div>
-
-				<div class="pagination"><ul><li><a class="current">1</a></li><li><a href="https://coronet.eu.com/page/2/" class="inactive">2</a></li><li><a href="https://coronet.eu.com/page/3/" class="inactive">3</a></li><li><a href="https://coronet.eu.com/page/4/" class="inactive">4</a></li><li><a href="https://coronet.eu.com/page/5/" class="inactive">5</a></li><li><a href="https://coronet.eu.com/page/2/">Next</a></li><li><a href='https://coronet.eu.com/page/235/'>Last</a></li></ul></div>
-		<div class="clear"></div>
-
-		
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-</div><!-- #content -->
-
-<footer data-wpr-lazyrender="1" id="colophon" class="site-footer
-" role="contentinfo">
-	<div  class="row">
-									<div class="four-columns-footer">
-				<section id="block-13" class="widget widget_block widget_text">
-<p><a href="https://coronet.eu.com/" data-type="link" data-id="https://coronet.eu.com/">Phimsex</a> là website tổng hợp nhiều thể loại phim sex hot nhất hiện nay trên thị trường. Phimsexhdmoinhat.com cung cấp cho anh em hơn 1000 video sex mới nhất đa dạng thể loại như: hiếp dâm, loạn luân, học sinh, vụng trộm, quay lén, không che...cùng tham khảo nhé.</p>
-</section><section id="block-16" class="widget widget_block">
-<ol class="wp-block-list">
-<li><a href="https://coronet.eu.com/phim-sex-viet-nam/" data-type="link" data-id="https://coronet.eu.com/phim-sex-viet-nam/">Phim sex Việt Nam</a></li>
-
-
-
-<li><a href="https://coronet.eu.com/khong-che/" data-type="link" data-id="https://coronet.eu.com/khong-che/">Phim sex không che</a></li>
-
-
-
-<li><a href="https://coronet.eu.com/nhat-ban/" data-type="link" data-id="https://coronet.eu.com/nhat-ban/">Phim sex Nhật Bản</a></li>
-
-
-
-<li><a href="https://coronet.eu.com/au-my/" data-type="link" data-id="https://coronet.eu.com/au-my/">Phim sex Âu Mỹ</a></li>
-
-
-
-<li><a href="https://coronet.eu.com/viet-sub/" data-type="link" data-id="https://coronet.eu.com/viet-sub/">Phim sex Việt Sub</a></li>
-
-
-
-<li><a href="https://coronet.eu.com/hentai/" data-type="link" data-id="https://coronet.eu.com/hentai/">Phim sex Hentai</a></li>
-
-
-
-<li><a href="https://coronet.eu.com/lo-clip/" data-type="link" data-id="https://coronet.eu.com/lo-clip/">Lộ Clip Hot</a></li>
-</ol>
-</section><section id="block-20" class="widget widget_block">
-<ul class="wp-block-list">
-<li><a href="https://coronet.eu.com/bo-chong-loan-luan-voi-con-dau-thieu-tinh/" data-type="link" data-id="https://coronet.eu.com/bo-chong-loan-luan-voi-con-dau-thieu-tinh/">Loạn luân</a></li>
-
-
-
-<li><a href="https://coronet.eu.com/bac-si-hiep-dam-gai-xinh-tai-benh-vien/" data-type="link" data-id="https://coronet.eu.com/bac-si-hiep-dam-gai-xinh-tai-benh-vien/">Hiếp dâm</a></li>
-
-
-
-<li><a href="https://coronet.eu.com/hoc-sinh-cap-2-moi-ti-tuoi-da-nung-lon-som/" data-type="link" data-id="https://coronet.eu.com/hoc-sinh-cap-2-moi-ti-tuoi-da-nung-lon-som/">Học sinh</a></li>
-
-
-
-<li><a href="https://coronet.eu.com/lam-tinh-tap-the-cung-3-em-hot-girl-top-jav/" data-type="link" data-id="https://coronet.eu.com/lam-tinh-tap-the-cung-3-em-hot-girl-top-jav/">Làm tình tập thể</a></li>
-
-
-
-<li><a href="https://coronet.eu.com/clip-sex-ban-trai-dung-dung-cu-tinh-duc-bao-dam-ban-gai-cuc-suong/" data-type="link" data-id="https://coronet.eu.com/clip-sex-ban-trai-dung-dung-cu-tinh-duc-bao-dam-ban-gai-cuc-suong/">Bạo dâm</a></li>
-
-
-
-<li><a href="https://coronet.eu.com/lo-clip-sex-quay-len-gai-xinh-di-dai/" data-type="link" data-id="https://coronet.eu.com/lo-clip-sex-quay-len-gai-xinh-di-dai/">Quay lén</a></li>
-
-
-
-<li><a href="https://coronet.eu.com/hoc-tro-chuoc-thuoc-me-roi-dit-co-giao-xinh-dep/">Thuốc mê</a></li>
-</ul>
-</section><section id="block-21" class="widget widget_block">
-<ul class="wp-block-list">
-<li>Địa chỉ: 38-48 Huyền Quang, P.Tiền An, Bắc Ninh, Vietnam, 220000</li>
-
-
-
-<li>SĐT: 0988745698</li>
-
-
-
-<li>Email:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ff8f9796928c9a87979b92909691979e8bd19c9092bf98929e9693d19c9092">[email&#160;protected]</a></li>
-
-
-
-<li>Website: <a href="https://coronet.eu.com/">https://coronet.eu.com/</a></li>
-
-
-
-<li>#phimsex, #phimsexhd, #phimnguoilon, #18+, #JAV, #phimsexviet</li>
-
-
-
-<li><a href="https://coronet.eu.com/sitemap_index.xml">Sitemap</a></li>
-</ul>
-</section><section id="block-25" class="widget widget_block"><a href="//www.dmca.com/Protection/Status.aspx?ID=9d9138f1-f049-4974-afa2-037368b9d2b0" title="DMCA.com Protection Status" class="dmca-badge"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"  alt="DMCA.com Protection Status" data-lazy-src="https://images.dmca.com/Badges/_dmca_premi_badge_5.png?ID=9d9138f1-f049-4974-afa2-037368b9d2b0" /><noscript><img src ="https://images.dmca.com/Badges/_dmca_premi_badge_5.png?ID=9d9138f1-f049-4974-afa2-037368b9d2b0"  alt="DMCA.com Protection Status" /></noscript></a></section>			</div>
-		
-		<div class="clear"></div>
-
-		
-		
-					<div class="site-info">
-				Phimsex I Kho phim Sex lớn nhất Việt Nam			</div><!-- .site-info -->
-			</div>
-</footer><!-- #colophon -->
-</div><!-- #page -->
-
-<a class="button" href="#" id="back-to-top" title="Back to top"><i class="fa fa-chevron-up"></i></a>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/retrotube\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
-</script>
-<meta name='dmca-site-verification' content='Q3VZbHJGeXYzenJPOW8wdWMwcFE2UT090' />		<div  class="modal fade wpst-user-modal" id="wpst-user-modal" tabindex="-1" role="dialog" aria-hidden="true">
-			<div  class="modal-dialog" data-active-tab="">
-				<div  class="modal-content">
-					<div class="modal-body">
-					<a href="#" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-remove"></i></a>
-						<!-- Register form -->
-						<div class="wpst-register">	
-															<div class="alert alert-danger">Registration is disabled.</div>
-													</div>
-
-						<!-- Login form -->
-						<div class="wpst-login">							 
-							<h3>Login to Phimsex - Tổng hợp 1000 video phim sex HOT nhất 2025</h3>
-						
-							<form id="wpst_login_form" action="https://coronet.eu.com/" method="post">
-
-								<div class="form-field">
-									<label>Username</label>
-									<input class="form-control input-lg required" name="wpst_user_login" type="text"/>
-								</div>
-								<div class="form-field">
-									<label for="wpst_user_pass">Password</label>
-									<input class="form-control input-lg required" name="wpst_user_pass" id="wpst_user_pass" type="password"/>
-								</div>
-								<div class="form-field lost-password">
-									<input type="hidden" name="action" value="wpst_login_member"/>
-									<button class="btn btn-theme btn-lg" data-loading-text="Loading..." type="submit">Login</button> <a class="alignright" href="#wpst-reset-password">Lost Password?</a>
-								</div>
-								<input type="hidden" id="login-security" name="login-security" value="a4d90193fe" /><input type="hidden" name="_wp_http_referer" value="/" />							</form>
-							<div class="wpst-errors"></div>
-						</div>
-
-						<!-- Lost Password form -->
-						<div class="wpst-reset-password">							 
-							<h3>Reset Password</h3>
-							<p>Enter the username or e-mail you used in your profile. A password reset link will be sent to you by email.</p>
-						
-							<form id="wpst_reset_password_form" action="https://coronet.eu.com/" method="post">
-								<div class="form-field">
-									<label for="wpst_user_or_email">Username or E-mail</label>
-									<input class="form-control input-lg required" name="wpst_user_or_email" id="wpst_user_or_email" type="text"/>
-								</div>
-								<div class="form-field">
-									<input type="hidden" name="action" value="wpst_reset_password"/>
-									<button class="btn btn-theme btn-lg" data-loading-text="Loading..." type="submit">Get new password</button>
-								</div>
-								<input type="hidden" id="password-security" name="password-security" value="a4d90193fe" /><input type="hidden" name="_wp_http_referer" value="/" />							</form>
-							<div class="wpst-errors"></div>
-						</div>
-
-						<div class="wpst-loading">
-							<p><i class="fa fa-refresh fa-spin"></i><br>Loading...</p>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<span class="wpst-register-footer">Don&#039;t have an account? <a href="#wpst-register">Sign up</a></span>
-						<span class="wpst-login-footer">Already have an account? <a href="#wpst-login">Login</a></span>
-					</div>				
-				</div>
-			</div>
-		</div>
-<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
-/* <![CDATA[ */
-"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
-/* ]]> */
-</script>
-<script type="text/javascript" id="rocket-preload-links-js-extra">
-/* <![CDATA[ */
-var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/coronet.eu.com","onHoverDelay":"100","rateThrottle":"3"};
-/* ]]> */
-</script>
-<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
-/* <![CDATA[ */
-(function() {
-"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
-}());
-/* ]]> */
-</script>
-<script type="text/javascript" id="rocket_lazyload_css-js-extra">
-/* <![CDATA[ */
-var rocket_lazyload_css_data = {"threshold":"300"};
-/* ]]> */
-</script>
-<script type="text/javascript" id="rocket_lazyload_css-js-after">
-/* <![CDATA[ */
-!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
-/* ]]> */
-</script>
-<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://coronet.eu.com/wp-content/cache/min/1/wp-content/themes/retrotube/assets/js/navigation.js?ver=1751523402" id="wpst-navigation-js" data-rocket-defer defer></script>
-<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://coronet.eu.com/wp-content/themes/retrotube/assets/js/jquery.bxslider.min.js?ver=4.2.15" id="wpst-carousel-js" data-rocket-defer defer></script>
-<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://coronet.eu.com/wp-content/themes/retrotube/assets/js/jquery.touchSwipe.min.js?ver=1.6.18" id="wpst-touchswipe-js" data-rocket-defer defer></script>
-<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://coronet.eu.com/wp-content/cache/min/1/wp-content/themes/retrotube/assets/js/lazyload.js?ver=1751523402" id="wpst-lazyload-js" data-rocket-defer defer></script>
-<script type="text/javascript" id="wpst-main-js-extra">
-/* <![CDATA[ */
-var wpst_ajax_var = {"url":"https:\/\/coronet.eu.com\/wp-admin\/admin-ajax.php","nonce":"27a43d3849","ctpl_installed":"","is_mobile":"1"};
-var objectL10nMain = {"readmore":"Read more","close":"Close"};
-var options = {"thumbnails_ratio":"1\/1","enable_views_system":"on","enable_rating_system":"on"};
-/* ]]> */
-</script>
-<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://coronet.eu.com/wp-content/cache/min/1/wp-content/themes/retrotube/assets/js/main.js?ver=1751523402" id="wpst-main-js" data-rocket-defer defer></script>
-<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://coronet.eu.com/wp-content/cache/min/1/wp-content/themes/retrotube/assets/js/skip-link-focus-fix.js?ver=1751523402" id="wpst-skip-link-focus-fix-js" data-rocket-defer defer></script>
-			<script type="rocketlazyloadscript" data-category="functional">
-				window['gtag_enable_tcf_support'] = false;
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '', {
-	cookie_flags:'secure;samesite=none',
-	
-});
-							</script>
-			<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
-if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
-images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
-if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://coronet.eu.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
-<!-- Other scripts -->
-
-<!-- Mobile scripts -->
-
-</body>
-</html>
-
-<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1751523627 -->
+  gtag('config', 'G-XN1RE1CVG6');
+</script></body></html>
